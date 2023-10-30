@@ -1,0 +1,2103 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "se", "sv", "en", "fr", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/CEON/ontology/construction/window", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "vann" : "http://purl.org/vocab/vann/",
+      "dcterms" : "http://purl.org/dc/terms/",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://w3id.org/CEON/ontology/construction/window#",
+      "dc" : "http://purl.org/dc/elements/1.1/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title" : {
+      "undefined" : "Flat Glass Ontology"
+    },
+    "iri" : "http://w3id.org/CEON/ontology/construction/window",
+    "version" : "0.2",
+    "author" : [ "Eva Blomqvist" ],
+    "description" : {
+      "undefined" : "This is the Flat Glass Ontology"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://github.com/LiUSemWeb/DPP/blob/master/LICENSE",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Eva Blomqvist",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Robin Keskisärkkä",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-10-30",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "window",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/CEON/ontology/construction/window/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Flat Glass Ontology",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/LiUSemWeb/T4V",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "130",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "4",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "97",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "136",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "144",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DowncyclableWindowWBodyTintedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DowncyclableWindowWBodyTintedGlass"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/U-value",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "U-value"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/1point1",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "1point1",
+        "se" : "1,1",
+        "en" : "1.1"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/1point8",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "1point8",
+        "se" : "1,8",
+        "en" : "1.8"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/2point7",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "2point7",
+        "se" : "2,7",
+        "en" : "2.7"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/0point7",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "0point7",
+        "sv" : "0,7",
+        "en" : "0.7"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "13"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DismountingDirection",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DismountingDirection"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/fromInside",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "Mounted from the inside, needs to be dismounted from the inside."
+      },
+      "labels" : {
+        "de" : "von innen",
+        "IRI-based" : "fromInside",
+        "sv" : "inifrån",
+        "en" : "from inside",
+        "fr" : "de l'intérieur"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/fromOutside",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "Mounted from the outside, needs to be dismounted from the outside."
+      },
+      "labels" : {
+        "de" : "von außen",
+        "IRI-based" : "fromOutside",
+        "sv" : "utifrån",
+        "en" : "from outside",
+        "fr" : "de l'extérieur"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "18"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/ReusableWindow",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReusableWindow"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/LigthTransmissionLevel",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LigthTransmissionLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/Below63Perc",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "Below63Perc",
+        "undefined" : "<63%"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/Above63Perc",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "Above63Perc",
+        "undefined" : ">63%"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWAsbestos",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWAsbestos"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "45"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "49"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/BuildingObject",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingObject"
+    },
+    "subClasses" : [ "2", "14", "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/WindowGlassType",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WindowGlassType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "39",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/BuildingObjectType",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingObjectType"
+    },
+    "subClasses" : [ "67", "63" ],
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "68"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/Condition",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/fair",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "de" : "schlecht",
+        "sv" : "dålig",
+        "en" : "Fair quality, can maybe be reused or refurbished.",
+        "fr" : "moyen"
+      },
+      "labels" : {
+        "IRI-based" : "fair",
+        "en" : "fair"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/good",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "de" : "gut",
+        "sv" : "bra",
+        "en" : "Good quality of the structure, can be reused directly.",
+        "fr" : "bon"
+      },
+      "labels" : {
+        "IRI-based" : "good",
+        "undefined" : "good"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/poor",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "Poor quality, cannot be reused, structure should be replaced."
+      },
+      "labels" : {
+        "de" : "Kasten",
+        "IRI-based" : "poor",
+        "sv" : "kass",
+        "en" : "poor condition",
+        "fr" : "mauvais"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindow",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindow"
+    },
+    "subClasses" : [ "77", "35", "78", "79", "80" ],
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "36",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/NonRecyclableWindow",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonRecyclableWindow"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "85",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWFilmOnGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWFilmOnGlass"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "80",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/Material",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/PVC",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "PVC",
+        "undefined" : "PVC"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/ALU",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "ALU",
+        "en" : "Aluminium",
+        "undefined" : "ALU"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/wood",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "de" : "Holz",
+        "IRI-based" : "wood",
+        "sv" : "trä",
+        "en" : "Wood",
+        "fr" : "bois"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/steel",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "de" : "Stahl",
+        "IRI-based" : "steel",
+        "sv" : "stål",
+        "en" : "Steel",
+        "fr" : "acier"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "91"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthYear",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "gMonthYear"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWHazardousSubstance",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWHazardousSubstance"
+    },
+    "union" : [ "34", "109" ],
+    "subClasses" : [ "34", "109" ],
+    "attributes" : [ "union", "external" ],
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/WindowCompositionType",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WindowCompositionType"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/IGUonly",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "An insulating glass unit (IGU) window only."
+      },
+      "labels" : {
+        "de" : "Nur Isolierglas",
+        "IRI-based" : "IGUonly",
+        "sv" : "endast isolerglas",
+        "en" : "IGU only",
+        "fr" : "Vitrage Isolant seulement"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/singleGlassOnly",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "A single glass window structure."
+      },
+      "labels" : {
+        "de" : "nur Einfachverglasung",
+        "IRI-based" : "singleGlassOnly",
+        "sv" : "endast enkelglas",
+        "en" : "single glass only",
+        "fr" : "Simple vitrage seulement"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/connected1+1",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "A window consisting of two connected single-glass windows."
+      },
+      "labels" : {
+        "IRI-based" : "connected1+1",
+        "en" : "connected 1+1"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/connected2+1",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "comment" : {
+        "en" : "A window composed of a single glass window connected with an IGU window."
+      },
+      "labels" : {
+        "IRI-based" : "connected2+1",
+        "en" : "connected 2+1"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWGeorgianBar",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWGeorgianBar"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "77",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DowncyclableWindowWThickFilm",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DowncyclableWindowWThickFilm"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "103",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/WindowType",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WindowType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/StructuralParameter",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StructuralParameter"
+    },
+    "subClasses" : [ "11", "33", "5", "70", "62" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWTemperedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWTemperedGlass"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "78",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DismountingParameter",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DismountingParameter"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "69"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "130"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "4"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "97"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "14" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "120"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DowncyclableWindowWithLaminatedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DowncyclableWindowWithLaminatedGlass"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "144",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DowncyclableWindow",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DowncyclableWindow"
+    },
+    "union" : [ "103", "0", "100", "144" ],
+    "subClasses" : [ "0", "103", "100", "144" ],
+    "attributes" : [ "union", "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/Window",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Window"
+    },
+    "subClasses" : [ "1", "36", "32", "85" ],
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWBlinds",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWBlinds"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "79",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/WindowFrame",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WindowFrame"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/RecyclableWindowWPCB",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecyclableWindowWPCB"
+    },
+    "intersection" : [ "36" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "109",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/WindowGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WindowGlass"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/DowncyclableWindowEnamelledGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DowncyclableWindowEnamelledGlass"
+    },
+    "intersection" : [ "2" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "100",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/SoundReductionLevel",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoundReductionLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/level37",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "level37",
+        "undefined" : "37"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/level35",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "level35",
+        "undefined" : "35"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/level30",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "level30",
+        "undefined" : "30"
+      }
+    }, {
+      "iri" : "http://w3id.org/CEON/ontology/construction/window/level40",
+      "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+      "labels" : {
+        "IRI-based" : "level40",
+        "undefined" : "40"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "12" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasWindowComposition",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "5",
+    "label" : {
+      "de" : "Fenstertyp",
+      "IRI-based" : "hasWindowComposition",
+      "sv" : "fönstertyp",
+      "en" : "window type",
+      "fr" : "type de fenêtre"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/patternedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "10",
+    "label" : {
+      "de" : "ornamentglas",
+      "IRI-based" : "patternedGlass",
+      "sv" : "ornamentglas",
+      "en" : "patterned glass",
+      "fr" : "verre à motif"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasStructure",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasStructure"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "20",
+    "subproperty" : [ "22", "3", "23", "24" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/recyclingParameter",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "recyclingParameter"
+    },
+    "domain" : "39",
+    "subproperty" : [ "40" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/totalGlassThickness",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "26",
+    "label" : {
+      "de" : "gesamte Glasdicke",
+      "IRI-based" : "totalGlassThickness",
+      "sv" : "total glastjocklek",
+      "en" : "total glass thickness",
+      "fr" : "épaisseur totale de verre"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/size",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "51",
+    "label" : {
+      "de" : "Größe",
+      "IRI-based" : "size",
+      "sv" : "storlek",
+      "en" : "size",
+      "fr" : "taille"
+    },
+    "domain" : "45",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/structuralValue",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "structuralValue"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/windowDoor",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "57",
+    "label" : {
+      "de" : "Fenstertür",
+      "IRI-based" : "windowDoor",
+      "sv" : "fönsterdörr",
+      "en" : "window door",
+      "fr" : "porte-fenêtre"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/reuseParameter",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "reuseParameter"
+    },
+    "domain" : "39",
+    "subproperty" : [ "59", "6", "60" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasFrameCondition",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "62",
+    "label" : {
+      "de" : "Zustand des Flügels",
+      "IRI-based" : "hasFrameCondition",
+      "sv" : "skick på fönsterbåge",
+      "en" : "has frame condition",
+      "fr" : "Etat du cadre"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "61",
+    "attributes" : [ "external", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasSoundReduction",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "70",
+    "label" : {
+      "de" : "Schalldämmung 40/37/35/30",
+      "IRI-based" : "hasSoundReduction",
+      "sv" : "ljudreduktion 40/37/35/30",
+      "en" : "Sound reduction 40/37/35/30",
+      "fr" : "Atténuation acoustique 40/37/35/30"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "69",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/enamelledGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "75",
+    "label" : {
+      "de" : "emailliertes Glas",
+      "IRI-based" : "enamelledGlass",
+      "sv" : "emaljerat glas",
+      "en" : "enamelled glass",
+      "fr" : "verre émaillé"
+    },
+    "domain" : "73",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/georgianBar",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "84",
+    "label" : {
+      "de" : "Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten",
+      "IRI-based" : "georgianBar",
+      "sv" : "Spröjs i enkelglas/integrerad i isolerglas?",
+      "en" : "Georgian bar in singl fram/IGU?",
+      "fr" : "barres géorgiennes"
+    },
+    "domain" : "83",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/filmThickerThan0point25",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "28",
+    "label" : {
+      "de" : "Folie dicker als 0,25 mm",
+      "IRI-based" : "filmThickerThan0point25",
+      "sv" : "film tjockare än 0,25mm",
+      "en" : "film thicker than 0.25mm",
+      "fr" : "épaisseur du film > 0,25 mm"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/windowDismounting",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "16",
+    "label" : {
+      "de" : "demontiert von außen / innen",
+      "IRI-based" : "windowDismounting",
+      "sv" : "demonteras utifrån/inifrån",
+      "en" : "mounted from inside/outside",
+      "fr" : "démonté de l'extérieur/de l'intérieur"
+    },
+    "superproperty" : [ "88" ],
+    "domain" : "2",
+    "attributes" : [ "external", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasLightTransmission",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "33",
+    "label" : {
+      "de" : "Lichttransmission über/unter 63 Prozent",
+      "IRI-based" : "hasLightTransmission",
+      "sv" : "ljustransmission över /under 63%",
+      "en" : "LT above 63%",
+      "fr" : "Transmission lumineuse > 63 %"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "97",
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "1",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/containsAsbestos",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "27",
+    "label" : {
+      "de" : "Asbestkitt ja/nein/nicht bekannt",
+      "IRI-based" : "containsAsbestos",
+      "sv" : "Asbestkitt ja/nej/vet ej",
+      "en" : "Asbestor Y/N",
+      "fr" : "amiante O/N"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "101"
+  }, {
+    "range" : "1",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/door",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "90",
+    "label" : {
+      "de" : "Tür",
+      "IRI-based" : "door",
+      "sv" : "dörr",
+      "en" : "door",
+      "fr" : "porte"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "104"
+  }, {
+    "range" : "12",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "12",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "12",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "35",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "12",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "36",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "36",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "36",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/reuseParameterValue",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "reuseParameterValue"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/temperedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "81",
+    "label" : {
+      "de" : "gehärtetes Glas",
+      "IRI-based" : "temperedGlass",
+      "sv" : "härdat glas",
+      "en" : "tempered glass",
+      "fr" : "verre trempé"
+    },
+    "domain" : "76",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasFrameMaterial",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "91",
+    "label" : {
+      "de" : "Flügelmaterial",
+      "IRI-based" : "hasFrameMaterial",
+      "sv" : "material i båge",
+      "en" : "has frame material",
+      "fr" : "matériel de cadre"
+    },
+    "superproperty" : [ "40" ],
+    "domain" : "120",
+    "attributes" : [ "external", "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasIntegratedBlind",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "47",
+    "label" : {
+      "de" : "integrierte Jalousie",
+      "IRI-based" : "hasIntegratedBlind",
+      "sv" : "integrerad persienn",
+      "en" : "integrated blind",
+      "fr" : "stores intégrés"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasMaterialComposition",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "hasMaterialComposition"
+    },
+    "superproperty" : [ "38" ],
+    "domain" : "20",
+    "subproperty" : [ "119" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/laminatedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "43",
+    "label" : {
+      "de" : "Verbundsicherheitsglas",
+      "IRI-based" : "laminatedGlass",
+      "sv" : "lamellglas",
+      "en" : "laminated glass",
+      "fr" : "verre feuilleté"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "122"
+  }, {
+    "range" : "64",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/fireGlassWGel",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "fireGlassWGel",
+      "sv" : "brandglas med gel",
+      "en" : "fire glass with gel"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "124"
+  }, {
+    "range" : "64",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "36",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/solarControlGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "42",
+    "label" : {
+      "de" : "Sonnenschutzglas",
+      "IRI-based" : "solarControlGlass",
+      "sv" : "solskyddsglas",
+      "en" : "solar control glass",
+      "fr" : "contrôle solaire"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "127"
+  }, {
+    "range" : "20",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/fireGlassWoGel",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "fireGlassWoGel",
+      "sv" : "brandglas utan gel",
+      "en" : "fire glass without gel"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasUValue",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "11",
+    "label" : {
+      "de" : "U-Wert 2,7/1,8/1,1/0,7",
+      "IRI-based" : "hasUValue",
+      "sv" : "u-värde 2,7/1,8/1,1/0,7",
+      "en" : "u-value 2,7/1,8/1,1/0,7",
+      "fr" : "Uw 2,7/1,8/1,1/0,7"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "130",
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "20",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/bodyTintedGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "7",
+    "label" : {
+      "de" : "gefärbtes Glas",
+      "IRI-based" : "bodyTintedGlass",
+      "sv" : "genomfärgat glas",
+      "en" : "body tinted glass",
+      "fr" : "verre teinté dans la masse"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/manufacturingMonthYear",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "95",
+    "label" : {
+      "de" : "produziert Jahr/Monat",
+      "IRI-based" : "manufacturingMonthYear",
+      "sv" : "tillverkningsmånad/år (mmÅÅ)",
+      "en" : "manufacturing month year (mmYY)",
+      "fr" : "date de production (année/mois)"
+    },
+    "domain" : "92",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/fireGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "93",
+    "label" : {
+      "de" : "Brandschutzglas",
+      "IRI-based" : "fireGlass",
+      "sv" : "brandglas",
+      "en" : "fire glass",
+      "fr" : "verre anti-feu"
+    },
+    "domain" : "94",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/openable",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "openable"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/hasComponent",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasComponent",
+      "sv" : "har del",
+      "en" : "has component"
+    },
+    "domain" : "20",
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/recycleParameterValue",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "recycleParameterValue"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/wiredGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "72",
+    "label" : {
+      "de" : "Drahtglas",
+      "IRI-based" : "wiredGlass",
+      "sv" : "trådglas",
+      "en" : "wired glass",
+      "fr" : "verre armé"
+    },
+    "domain" : "71",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/stampOnGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "stampOnGlass",
+      "sv" : "stämplat glas",
+      "en" : "stamp on glass"
+    },
+    "domain" : "49",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/replacementRecommendation",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "136",
+    "label" : {
+      "de" : "Empfehlung für den Austausch von Glas/Fenster",
+      "IRI-based" : "replacementRecommendation",
+      "sv" : "bytesrekommendation glas/fönster",
+      "en" : "replacement frame or glass",
+      "fr" : "recommandation pour le remplacement des vitres/fenêtres"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "2",
+    "attributes" : [ "external", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/containsPCB",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "89",
+    "label" : {
+      "de" : "PCB ja/nein",
+      "IRI-based" : "containsPCB",
+      "sv" : "PCB ja/nej",
+      "en" : "PCB Y/N",
+      "fr" : "PCB O/N"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/filmOnGlass",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "65",
+    "label" : {
+      "de" : "foliertes Glas (Transparenz/Sonnenschutzfolie)",
+      "IRI-based" : "filmOnGlass",
+      "sv" : "filmat glas (insyn/solskyddsfilm)",
+      "en" : "film on glass",
+      "fr" : "film sur le verre"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/connected",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "137",
+    "label" : {
+      "de" : "Kastenfenster ja / nein",
+      "IRI-based" : "connected",
+      "se" : "kopplat",
+      "en" : "connected",
+      "fr" : "double fenêtre"
+    },
+    "domain" : "2",
+    "comment" : {
+      "se" : "Ett fönster some består att två kopplade rutor.",
+      "en" : "A window composed of two connected glass panes."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://w3id.org/CEON/ontology/construction/window/dismountingParameter",
+    "baseIri" : "http://w3id.org/CEON/ontology/construction/window",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "dismountingParameter"
+    },
+    "domain" : "20",
+    "subproperty" : [ "87" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "2",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "1",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "2",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "2",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  } ]
+}
