@@ -15,7 +15,7 @@
     vann:preferredNamespacePrefix "window"^^xsd:string ;
     vann:preferredNamespaceUri "http://w3id.org/CEON/ontology/flatglass/"^^xsd:string ;
     rdfs:seeAlso <https://github.com/LiUSemWeb/T4V> ;
-    owl:versionIRI <http://w3id.org/CEON/ontology/flatglass//0.2/> ;
+    owl:versionIRI <http://w3id.org/CEON/ontology/flatglass/0.2/> ;
     owl:versionInfo "0.2" .
 
 <http://w3id.org/CEON/ontology/flatglass/ALU> a <http://w3id.org/CEON/ontology/flatglass/Material>,
