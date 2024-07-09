@@ -1,0 +1,1409 @@
+@prefix : <http://w3id.org/CEON/ontology/flatglass/#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://w3id.org/CEON/ontology/flatglass/#> .
+
+<http://w3id.org/CEON/ontology/flatglass/> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://w3id.org/CEON/ontology/flatglass/0.3/> ;
+                                            dcterms:contributor "Robin Keskisärkkä" ;
+                                            dcterms:created "2024-07-09" ;
+                                            dcterms:creator "Eva Blomqvist" ;
+                                            dcterms:description "This is the Flat Glass Ontology" ;
+                                            dcterms:license "https://github.com/LiUSemWeb/DPP/blob/master/LICENSE" ;
+                                            dcterms:title "Flat Glass Ontology" ;
+                                            vann:preferredNamespacePrefix "window" ;
+                                            vann:preferredNamespaceUri "http://w3id.org/CEON/ontology/flatglass/" ;
+                                            rdfs:seeAlso <https://github.com/LiUSemWeb/T4V> ;
+                                            owl:versionInfo 0.3 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#gMonthYear
+xsd:gMonthYear rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/CEON/ontology/flatglass/dismountingParameter
+:dismountingParameter rdf:type owl:ObjectProperty ;
+                      rdfs:domain :BuiltElement ;
+                      rdfs:range :DismountingParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasComponent
+:hasComponent rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
+              rdfs:domain :BuiltElement ;
+              rdfs:range :BuiltElement ;
+              rdfs:label "har del"@sv ,
+                         "has component"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasFrameCondition
+:hasFrameCondition rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :reuseParameter ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Window
+                                               :WindowFrame
+                                             )
+                               ] ;
+                   rdfs:range :Condition ;
+                   rdfs:label "Etat du cadre"@fr ,
+                              "Zustand des Flügels"@de ,
+                              "has frame condition"@en ,
+                              "skick på fönsterbåge"@sv ;
+                   rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial
+:hasFrameMaterial rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :hasMaterialComposition ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Window
+                                              :WindowFrame
+                                            )
+                              ] ;
+                  rdfs:range :Material ;
+                  rdfs:label "Flügelmaterial"@de ,
+                             "has frame material"@en ,
+                             "material i båge"@sv ,
+                             "matériel de cadre"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasLightTransmission
+:hasLightTransmission rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasStructure ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Window
+                                                  :WindowGlass
+                                                )
+                                  ] ;
+                      rdfs:range :LigthTransmissionLevel ;
+                      rdfs:label "LT above 63%"@en ,
+                                 "Lichttransmission über/unter 63 Prozent"@de ,
+                                 "Transmission lumineuse > 63 %"@fr ,
+                                 "ljustransmission över /under 63%"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition
+:hasMaterialComposition rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :recyclingParameter ;
+                        rdfs:domain :BuiltElement ;
+                        rdfs:range :Material .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasSoundReduction
+:hasSoundReduction rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasStructure ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Window
+                                               :WindowGlass
+                                             )
+                               ] ;
+                   rdfs:range :SoundReductionLevel ;
+                   rdfs:label "Atténuation acoustique 40/37/35/30"@fr ,
+                              "Schalldämmung 40/37/35/30"@de ,
+                              "Sound reduction 40/37/35/30"@en ,
+                              "ljudreduktion 40/37/35/30"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasStructure
+:hasStructure rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :reuseParameter ;
+              rdfs:domain :BuiltElement ;
+              rdfs:range :StructuralParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain :BuiltElement ;
+         rdfs:range :BuildingElementType ;
+         rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Attributes/ElementType" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasUValue
+:hasUValue rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasStructure ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Window
+                                       :WindowGlass
+                                     )
+                       ] ;
+           rdfs:range :U-value ;
+           rdfs:label "U-Wert 2,7/1,8/1,1/0,7"@de ,
+                      "Uw 2,7/1,8/1,1/0,7"@fr ,
+                      "u-value 2,7/1,8/1,1/0,7"@en ,
+                      "u-värde 2,7/1,8/1,1/0,7"@sv ;
+           rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasWindowComposition
+:hasWindowComposition rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasStructure ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Window
+                                                  :WindowGlass
+                                                )
+                                  ] ;
+                      rdfs:range :WindowCompositionType ;
+                      rdfs:label "Fenstertyp"@de ,
+                                 "fönstertyp"@sv ,
+                                 "type de fenêtre"@fr ,
+                                 "window type"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/recyclingParameter
+:recyclingParameter rdf:type owl:ObjectProperty .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/replacementRecommendation
+:replacementRecommendation rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :reuseParameter ;
+                           rdfs:domain :Window ;
+                           rdfs:range [ rdf:type owl:Class ;
+                                        owl:unionOf ( :WindowFrame
+                                                      :WindowGlass
+                                                    )
+                                      ] ;
+                           rdfs:label "Empfehlung für den Austausch von Glas/Fenster"@de ,
+                                      "bytesrekommendation glas/fönster"@sv ,
+                                      "recommandation pour le remplacement des vitres/fenêtres"@fr ,
+                                      "replacement frame or glass"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/reuseParameter
+:reuseParameter rdf:type owl:ObjectProperty .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/windowDismounting
+:windowDismounting rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :dismountingParameter ;
+                   rdfs:domain :Window ;
+                   rdfs:range :DismountingDirection ;
+                   rdfs:label "demonteras utifrån/inifrån"@sv ,
+                              "demontiert von außen / innen"@de ,
+                              "démonté de l'extérieur/de l'intérieur"@fr ,
+                              "mounted from inside/outside"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass
+:bodyTintedGlass rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :recycleParameterValue ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :Window
+                                             :WindowGlass
+                                           )
+                             ] ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:label "body tinted glass"@en ,
+                            "gefärbtes Glas"@de ,
+                            "genomfärgat glas"@sv ,
+                            "verre teinté dans la masse"@fr ;
+                 rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/GlassColour" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/connected
+:connected rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :structuralValue ;
+           rdfs:domain :Window ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "A window composed of two connected glass panes."@en ,
+                        "Ett fönster some består att två kopplade rutor."@se ;
+           rdfs:label "Kastenfenster ja / nein"@de ,
+                      "connected"@en ,
+                      "double fenêtre"@fr ,
+                      "kopplat"@se .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/containsAsbestos
+:containsAsbestos rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :recycleParameterValue ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Window
+                                              :WindowFrame
+                                            )
+                              ] ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:label "Amiante O/N"@fr ,
+                             "Asbestkitt ja/nein/nicht bekannt"@de ,
+                             "Asbestkitt ja/nej/vet ej"@sv ,
+                             "Asbestos Y/N"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/containsPCB
+:containsPCB rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :recycleParameterValue ;
+             rdfs:domain :Window ;
+             rdfs:range xsd:boolean ;
+             rdfs:label "PCB O/N"@fr ,
+                        "PCB Y/N"@en ,
+                        "PCB ja/nein"@de ,
+                        "PCB ja/nej"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/door
+:door rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :structuralValue ;
+      rdfs:domain :BuiltElement ;
+      rdfs:range xsd:boolean ;
+      rdfs:label "Tür"@de ,
+                 "door"@en ,
+                 "dörr"@sv ,
+                 "porte"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/enamelledGlass
+:enamelledGlass rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :recycleParameterValue ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Window
+                                            :WindowGlass
+                                          )
+                            ] ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "emailliertes Glas"@de ,
+                           "emaljerat glas"@sv ,
+                           "enamelled glass"@en ,
+                           "verre émaillé"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/filmOnGlass
+:filmOnGlass rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :recycleParameterValue ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Window
+                                         :WindowGlass
+                                       )
+                         ] ;
+             rdfs:range xsd:boolean ;
+             rdfs:label "film on glass"@en ,
+                        "film sur le verre"@fr ,
+                        "filmat glas (insyn/solskyddsfilm)"@sv ,
+                        "foliertes Glas (Transparenz/Sonnenschutzfolie)"@de ;
+             rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsCoated" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25
+:filmThickerThan0point25 rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :filmOnGlass ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( :Window
+                                                     :WindowGlass
+                                                   )
+                                     ] ;
+                         rdfs:range xsd:boolean ;
+                         rdfs:label "Folie dicker als 0,25 mm"@de ,
+                                    "film thicker than 0.25mm"@en ,
+                                    "film tjockare än 0,25mm"@sv ,
+                                    "épaisseur du film > 0,25 mm"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/fireGlass
+:fireGlass rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :recycleParameterValue ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Window
+                                       :WindowGlass
+                                     )
+                       ] ;
+           rdfs:range xsd:boolean ;
+           rdfs:label "Brandschutzglas"@de ,
+                      "brandglas"@sv ,
+                      "fire glass"@en ,
+                      "verre anti-feu"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/fireGlassWGel
+:fireGlassWGel rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :recycleParameterValue ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Window
+                                           :WindowGlass
+                                         )
+                           ] ;
+               rdfs:range xsd:boolean ;
+               rdfs:label "brandglas med gel"@sv ,
+                          "fire glass with gel"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel
+:fireGlassWoGel rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :recycleParameterValue ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Window
+                                            :WindowGlass
+                                          )
+                            ] ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "brandglas utan gel"@sv ,
+                           "fire glass without gel"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/georgianBar
+:georgianBar rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :recycleParameterValue ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Window
+                                         :WindowGlass
+                                       )
+                         ] ;
+             rdfs:range xsd:boolean ;
+             rdfs:label "Georgian bar in singl fram/IGU?"@en ,
+                        "Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten"@de ,
+                        "Spröjs i enkelglas/integrerad i isolerglas?"@sv ,
+                        "barres géorgiennes"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind
+:hasIntegratedBlind rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :reuseParameterValue ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Window
+                                                :WindowFrame
+                                                :WindowGlass
+                                              )
+                                ] ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:label "integrated blind"@en ,
+                               "integrerad persienn"@sv ,
+                               "integrierte Jalousie"@de ,
+                               "stores intégrés"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/laminatedGlass
+:laminatedGlass rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :recycleParameterValue ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Window
+                                            :WindowGlass
+                                          )
+                            ] ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "Verbundsicherheitsglas"@de ,
+                           "lamellglas"@sv ,
+                           "laminated glass"@en ,
+                           "verre feuilleté"@fr ;
+                rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/manufacturingMonthYear
+:manufacturingMonthYear rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :recycleParameterValue ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :Window
+                                                    :WindowFrame
+                                                    :WindowGlass
+                                                  )
+                                    ] ;
+                        rdfs:range xsd:gMonthYear ;
+                        rdfs:label "date de production (année/mois)"@fr ,
+                                   "manufacturing month year (mmYY)"@en ,
+                                   "produziert Jahr/Monat"@de ,
+                                   "tillverkningsmånad/år (mmÅÅ)"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/openable
+:openable rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :structuralValue ;
+          rdfs:domain :Window ;
+          rdfs:range xsd:boolean .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/patternedGlass
+:patternedGlass rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :recycleParameterValue ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Window
+                                            :WindowGlass
+                                          )
+                            ] ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "ornamentglas"@de ,
+                           "ornamentglas"@sv ,
+                           "patterned glass"@en ,
+                           "verre à motif"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/recycleParameterValue
+:recycleParameterValue rdf:type owl:DatatypeProperty .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/reuseParameterValue
+:reuseParameterValue rdf:type owl:DatatypeProperty .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/size
+:size rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :recycleParameterValue ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Window
+                                  :WindowFrame
+                                  :WindowGlass
+                                )
+                  ] ;
+      rdfs:label "Größe"@de ,
+                 "size"@en ,
+                 "storlek"@sv ,
+                 "taille"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/solarControlGlass
+:solarControlGlass rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :reuseParameterValue ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Window
+                                               :WindowGlass
+                                             )
+                               ] ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:label "Sonnenschutzglas"@de ,
+                              "contrôle solaire"@fr ,
+                              "solar control glass"@en ,
+                              "solskyddsglas"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/stampOnGlass
+:stampOnGlass rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :recycleParameterValue ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Window
+                                          :WindowGlass
+                                        )
+                          ] ;
+              rdfs:range xsd:boolean ;
+              rdfs:label "stamp on glass"@en ,
+                         "stämplat glas"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/structuralValue
+:structuralValue rdf:type owl:DatatypeProperty .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/temperedGlass
+:temperedGlass rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :recycleParameterValue ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Window
+                                           :WindowGlass
+                                         )
+                           ] ;
+               rdfs:range xsd:boolean ;
+               rdfs:label "gehärtetes Glas"@de ,
+                          "härdat glas"@sv ,
+                          "tempered glass"@en ,
+                          "verre trempé"@fr ;
+               rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsTempered" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/totalGlassThickness
+:totalGlassThickness rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :recycleParameterValue ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :Window
+                                                 :WindowGlass
+                                               )
+                                 ] ;
+                     rdfs:range xsd:float ;
+                     rdfs:label "gesamte Glasdicke"@de ,
+                                "total glass thickness"@en ,
+                                "total glastjocklek"@sv ,
+                                "épaisseur totale de verre"@fr .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/windowDoor
+:windowDoor rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :structuralValue ;
+            rdfs:domain :BuiltElement ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "Fenstertür"@de ,
+                       "fönsterdörr"@sv ,
+                       "porte-fenêtre"@fr ,
+                       "window door"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/wiredGlass
+:wiredGlass rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :recycleParameterValue ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Window
+                                        :WindowGlass
+                                      )
+                        ] ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "Drahtglas"@de ,
+                       "trådglas"@sv ,
+                       "verre armé"@fr ,
+                       "wired glass"@en ;
+            rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/CEON/ontology/flatglass/BuildingElementType
+:BuildingElementType rdf:type owl:Class .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/BuiltElement
+:BuiltElement rdf:type owl:Class ;
+              rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltElement" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/Condition
+:Condition rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :fair
+                                             :good
+                                             :poor
+                                           )
+                               ] ;
+           rdfs:subClassOf :StructuralParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DismountingDirection
+:DismountingDirection rdf:type owl:Class ;
+                      rdfs:subClassOf :DismountingParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DismountingParameter
+:DismountingParameter rdf:type owl:Class .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DowncyclableWindow
+:DowncyclableWindow rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:unionOf ( :DowncyclableWindowEnamelledGlass
+                                                        :DowncyclableWindowWBodyTintedGlass
+                                                        :DowncyclableWindowWThickFilm
+                                                        :DowncyclableWindowWithLaminatedGlass
+                                                      )
+                                        ] ;
+                    rdfs:subClassOf :Window .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DowncyclableWindowEnamelledGlass
+:DowncyclableWindowEnamelledGlass rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( :Window
+                                                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty :fireGlassWGel ;
+                                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                                    ]
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty :fireGlassWoGel ;
+                                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                                    ]
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty :wiredGlass ;
+                                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                                    ]
+                                                                                                  ) ;
+                                                                               rdf:type owl:Class
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :enamelledGlass ;
+                                                                               owl:hasValue "true"^^xsd:boolean
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                  rdfs:subClassOf :DowncyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DowncyclableWindowWBodyTintedGlass
+:DowncyclableWindowWBodyTintedGlass rdf:type owl:Class ;
+                                    owl:equivalentClass [ owl:intersectionOf ( :Window
+                                                                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty :fireGlassWGel ;
+                                                                                                        owl:hasValue "false"^^xsd:boolean
+                                                                                                      ]
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty :fireGlassWoGel ;
+                                                                                                        owl:hasValue "false"^^xsd:boolean
+                                                                                                      ]
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty :wiredGlass ;
+                                                                                                        owl:hasValue "false"^^xsd:boolean
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty :bodyTintedGlass ;
+                                                                                 owl:hasValue "true"^^xsd:boolean
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                    rdfs:subClassOf :DowncyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DowncyclableWindowWThickFilm
+:DowncyclableWindowWThickFilm rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :Window
+                                                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :fireGlassWGel ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :fireGlassWoGel ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :wiredGlass ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :filmThickerThan0point25 ;
+                                                                           owl:hasValue "true"^^xsd:boolean
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :DowncyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/DowncyclableWindowWithLaminatedGlass
+:DowncyclableWindowWithLaminatedGlass rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( :Window
+                                                                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :bodyTintedGlass ;
+                                                                                                          owl:hasValue "false"^^xsd:boolean
+                                                                                                        ]
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :enamelledGlass ;
+                                                                                                          owl:hasValue "false"^^xsd:boolean
+                                                                                                        ]
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :filmThickerThan0point25 ;
+                                                                                                          owl:hasValue "false"^^xsd:boolean
+                                                                                                        ]
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :fireGlassWGel ;
+                                                                                                          owl:hasValue "false"^^xsd:boolean
+                                                                                                        ]
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :fireGlassWoGel ;
+                                                                                                          owl:hasValue "false"^^xsd:boolean
+                                                                                                        ]
+                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                          owl:onProperty :wiredGlass ;
+                                                                                                          owl:hasValue "false"^^xsd:boolean
+                                                                                                        ]
+                                                                                                      ) ;
+                                                                                   rdf:type owl:Class
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty :laminatedGlass ;
+                                                                                   owl:hasValue "true"^^xsd:boolean
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf :DowncyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel
+:LigthTransmissionLevel rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Class ;
+                                              owl:oneOf ( :Above63Perc
+                                                          :Below63Perc
+                                                        )
+                                            ] ;
+                        rdfs:subClassOf :StructuralParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/Material
+:Material rdf:type owl:Class .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/NonRecyclableWindow
+:NonRecyclableWindow rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :Window
+                                                                [ rdf:type owl:Class ;
+                                                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :fireGlass ;
+                                                                                  owl:hasValue "true"^^xsd:boolean
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :fireGlassWGel ;
+                                                                                  owl:hasValue "true"^^xsd:boolean
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :fireGlassWoGel ;
+                                                                                  owl:hasValue "true"^^xsd:boolean
+                                                                                ]
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty :wiredGlass ;
+                                                                                  owl:hasValue "true"^^xsd:boolean
+                                                                                ]
+                                                                              )
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :Window .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindow
+:RecyclableWindow rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Window
+                                                             [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty :fireGlassWGel ;
+                                                                                                                             owl:hasValue "false"^^xsd:boolean
+                                                                                                                           ]
+                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty :fireGlassWoGel ;
+                                                                                                                             owl:hasValue "false"^^xsd:boolean
+                                                                                                                           ]
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ]
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty :fireGlass ;
+                                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                                    ]
+                                                                                                  )
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :bodyTintedGlass ;
+                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :enamelledGlass ;
+                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :filmThickerThan0point25 ;
+                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :laminatedGlass ;
+                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :wiredGlass ;
+                                                                                      owl:hasValue "false"^^xsd:boolean
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :Window .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWAsbestos
+:RecyclableWindowWAsbestos rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :RecyclableWindow
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty :containsAsbestos ;
+                                                                        owl:hasValue "true"^^xsd:boolean
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :RecyclableWindowWHazardousSubstance .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWBlinds
+:RecyclableWindowWBlinds rdf:type owl:Class ;
+                         owl:equivalentClass [ owl:intersectionOf ( :RecyclableWindow
+                                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty :containsAsbestos ;
+                                                                                             owl:hasValue "false"^^xsd:boolean
+                                                                                           ]
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty :containsPCB ;
+                                                                                             owl:hasValue "false"^^xsd:boolean
+                                                                                           ]
+                                                                                         ) ;
+                                                                      rdf:type owl:Class
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasIntegratedBlind ;
+                                                                      owl:hasValue "true"^^xsd:boolean
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                         rdfs:subClassOf :RecyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWFilmOnGlass
+:RecyclableWindowWFilmOnGlass rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :RecyclableWindow
+                                                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :containsAsbestos ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :containsPCB ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :filmOnGlass ;
+                                                                           owl:hasValue "true"^^xsd:boolean
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :RecyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWGeorgianBar
+:RecyclableWindowWGeorgianBar rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :RecyclableWindow
+                                                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :containsAsbestos ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty :containsPCB ;
+                                                                                                  owl:hasValue "false"^^xsd:boolean
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :georgianBar ;
+                                                                           owl:hasValue "true"^^xsd:boolean
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] ;
+                              rdfs:subClassOf :RecyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWHazardousSubstance
+:RecyclableWindowWHazardousSubstance rdf:type owl:Class ;
+                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                           owl:unionOf ( :RecyclableWindowWAsbestos
+                                                                         :RecyclableWindowWPCB
+                                                                       )
+                                                         ] ;
+                                     rdfs:subClassOf :RecyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWPCB
+:RecyclableWindowWPCB rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( :RecyclableWindow
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :containsPCB ;
+                                                                   owl:hasValue "true"^^xsd:boolean
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf :RecyclableWindowWHazardousSubstance .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/RecyclableWindowWTemperedGlass
+:RecyclableWindowWTemperedGlass rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( :RecyclableWindow
+                                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty :containsAsbestos ;
+                                                                                                    owl:hasValue "false"^^xsd:boolean
+                                                                                                  ]
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty :containsPCB ;
+                                                                                                    owl:hasValue "false"^^xsd:boolean
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :temperedGlass ;
+                                                                             owl:hasValue "true"^^xsd:boolean
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf :RecyclableWindow .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/ReusableWindow
+:ReusableWindow rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasSoundReduction ;
+                                                                             owl:hasValue :level37
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasSoundReduction ;
+                                                                             owl:hasValue :level40
+                                                                           ]
+                                                                         )
+                                                           ]
+                                                           [ rdf:type owl:Class ;
+                                                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasUValue ;
+                                                                             owl:hasValue <http://w3id.org/CEON/ontology/flatglass/1point8>
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :hasUValue ;
+                                                                             owl:hasValue <http://w3id.org/CEON/ontology/flatglass/2point7>
+                                                                           ]
+                                                                         )
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasFrameCondition ;
+                                                             owl:hasValue :good
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasLightTransmission ;
+                                                             owl:hasValue :Above63Perc
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Window .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel
+:SoundReductionLevel rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:oneOf ( :level30
+                                                       :level35
+                                                       :level37
+                                                       :level40
+                                                     )
+                                         ] ;
+                     rdfs:subClassOf :StructuralParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/StructuralParameter
+:StructuralParameter rdf:type owl:Class .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/U-value
+:U-value rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( <http://w3id.org/CEON/ontology/flatglass/0point7>
+                                           <http://w3id.org/CEON/ontology/flatglass/1point1>
+                                           <http://w3id.org/CEON/ontology/flatglass/1point8>
+                                           <http://w3id.org/CEON/ontology/flatglass/2point7>
+                                         )
+                             ] ;
+         rdfs:subClassOf :StructuralParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/Window
+:Window rdf:type owl:Class ;
+        rdfs:subClassOf :BuiltElement ,
+                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasComponent ;
+                                                 owl:someValuesFrom :WindowFrame
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasComponent ;
+                                                 owl:someValuesFrom :WindowGlass
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasFrameMaterial ;
+                                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :Material
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasWindowComposition ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :WindowCompositionType
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasFrameCondition ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :Condition
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasLightTransmission ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :LigthTransmissionLevel
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasSoundReduction ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :SoundReductionLevel
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasUValue ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :U-value
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :windowDismounting ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass :DismountingDirection
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :bodyTintedGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :containsAsbestos ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :containsPCB ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :door ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :enamelledGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :filmOnGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :fireGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :georgianBar ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasIntegratedBlind ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :laminatedGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :patternedGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :solarControlGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :temperedGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :windowDoor ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :wiredGlass ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :connected ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :manufacturingMonthYear ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:gMonthYear
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :size ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :stampOnGlass ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:boolean
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :totalGlassThickness ;
+                                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:string
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+        rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/WindowCompositionType
+:WindowCompositionType rdf:type owl:Class ;
+                       rdfs:subClassOf :StructuralParameter .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/WindowFrame
+:WindowFrame rdf:type owl:Class ;
+             rdfs:subClassOf :BuiltElement .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/WindowGlass
+:WindowGlass rdf:type owl:Class ;
+             rdfs:subClassOf :BuiltElement .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/WindowGlassType
+:WindowGlassType rdf:type owl:Class ;
+                 rdfs:subClassOf :BuildingElementType .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/WindowType
+:WindowType rdf:type owl:Class ;
+            rdfs:subClassOf :BuildingElementType .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/CEON/ontology/flatglass/ALU
+:ALU rdf:type owl:NamedIndividual ,
+              :Material ;
+     rdfs:label "Aluminium"@en ,
+                "ALU" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/Above63Perc
+:Above63Perc rdf:type owl:NamedIndividual ,
+                      :LigthTransmissionLevel ;
+             rdfs:label ">63%" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/Below63Perc
+:Below63Perc rdf:type owl:NamedIndividual ,
+                      :LigthTransmissionLevel ;
+             rdfs:label "<63%" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/IGUonly
+:IGUonly rdf:type owl:NamedIndividual ,
+                  :WindowCompositionType ;
+         rdfs:comment "An insulating glass unit (IGU) window only."@en ;
+         rdfs:label "IGU only"@en ,
+                    "Nur Isolierglas"@de ,
+                    "Vitrage Isolant seulement"@fr ,
+                    "endast isolerglas"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/PVC
+:PVC rdf:type owl:NamedIndividual ,
+              :Material ;
+     rdfs:label "PVC" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/fair
+:fair rdf:type owl:NamedIndividual ,
+               :Condition ;
+      rdfs:comment "Fair quality, can maybe be reused or refurbished."@en ,
+                   "dålig"@sv ,
+                   "moyen"@fr ,
+                   "schlecht"@de ;
+      rdfs:label "fair"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/fromInside
+:fromInside rdf:type owl:NamedIndividual ,
+                     :DismountingDirection ;
+            rdfs:comment "Mounted from the inside, needs to be dismounted from the inside."@en ;
+            rdfs:label "de l'intérieur"@fr ,
+                       "from inside"@en ,
+                       "inifrån"@sv ,
+                       "von innen"@de .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/fromOutside
+:fromOutside rdf:type owl:NamedIndividual ,
+                      :DismountingDirection ;
+             rdfs:comment "Mounted from the outside, needs to be dismounted from the outside."@en ;
+             rdfs:label "de l'extérieur"@fr ,
+                        "from outside"@en ,
+                        "utifrån"@sv ,
+                        "von außen"@de .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/good
+:good rdf:type owl:NamedIndividual ,
+               :Condition ;
+      rdfs:comment "Good quality of the structure, can be reused directly."@en ,
+                   "bon"@fr ,
+                   "bra"@sv ,
+                   "gut"@de ;
+      rdfs:label "good" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/level30
+:level30 rdf:type owl:NamedIndividual ,
+                  :SoundReductionLevel ;
+         rdfs:label "30" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/level35
+:level35 rdf:type owl:NamedIndividual ,
+                  :SoundReductionLevel ;
+         rdfs:label "35" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/level37
+:level37 rdf:type owl:NamedIndividual ,
+                  :SoundReductionLevel ;
+         rdfs:label "37" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/level40
+:level40 rdf:type owl:NamedIndividual ,
+                  :SoundReductionLevel ;
+         rdfs:label "40" .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/poor
+:poor rdf:type owl:NamedIndividual ,
+               :Condition ;
+      rdfs:comment "Poor quality, cannot be reused, structure should be replaced."@en ;
+      rdfs:label "Kasten"@de ,
+                 "kass"@sv ,
+                 "mauvais"@fr ,
+                 "poor condition"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/singleGlassOnly
+:singleGlassOnly rdf:type owl:NamedIndividual ,
+                          :WindowCompositionType ;
+                 rdfs:comment "A single glass window structure."@en ;
+                 rdfs:label "Simple vitrage seulement"@fr ,
+                            "endast enkelglas"@sv ,
+                            "nur Einfachverglasung"@de ,
+                            "single glass only"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/steel
+:steel rdf:type owl:NamedIndividual ,
+                :Material ;
+       rdfs:label "Stahl"@de ,
+                  "Steel"@en ,
+                  "acier"@fr ,
+                  "stål"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/wood
+:wood rdf:type owl:NamedIndividual ,
+               :Material ;
+      rdfs:label "Holz"@de ,
+                 "Wood"@en ,
+                 "bois"@fr ,
+                 "trä"@sv .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/0point7
+<http://w3id.org/CEON/ontology/flatglass/0point7> rdf:type owl:NamedIndividual ,
+                                                           :U-value ;
+                                                  rdfs:label "0,7"@sv ,
+                                                             "0.7"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/1point1
+<http://w3id.org/CEON/ontology/flatglass/1point1> rdf:type owl:NamedIndividual ,
+                                                           :U-value ;
+                                                  rdfs:label "1,1"@se ,
+                                                             "1.1"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/1point8
+<http://w3id.org/CEON/ontology/flatglass/1point8> rdf:type owl:NamedIndividual ,
+                                                           :U-value ;
+                                                  rdfs:label "1,8"@se ,
+                                                             "1.8"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/2point7
+<http://w3id.org/CEON/ontology/flatglass/2point7> rdf:type owl:NamedIndividual ,
+                                                           :U-value ;
+                                                  rdfs:label "2,7"@se ,
+                                                             "2.7"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/connected1+1
+<http://w3id.org/CEON/ontology/flatglass/connected1+1> rdf:type owl:NamedIndividual ,
+                                                                :WindowCompositionType ;
+                                                       rdfs:comment "A window consisting of two connected single-glass windows."@en ;
+                                                       rdfs:label "connected 1+1"@en .
+
+
+###  http://w3id.org/CEON/ontology/flatglass/connected2+1
+<http://w3id.org/CEON/ontology/flatglass/connected2+1> rdf:type owl:NamedIndividual ,
+                                                                :WindowCompositionType ;
+                                                       rdfs:comment "A window composed of a single glass window connected with an IGU window."@en ;
+                                                       rdfs:label "connected 2+1"@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
