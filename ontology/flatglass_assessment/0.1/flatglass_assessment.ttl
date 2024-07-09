@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/CEON/ontology/flatglass_assessment/#> .
+@prefix : <http://w3id.org/CEON/ontology/flatglass_assessment/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,7 +8,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix window: <http://w3id.org/CEON/ontology/flatglass/> .
-@base <http://w3id.org/CEON/ontology/flatglass_assessment/#> .
+@base <http://w3id.org/CEON/ontology/flatglass_assessment/> .
 
 <http://w3id.org/CEON/ontology/flatglass_assessment/> rdf:type owl:Ontology ;
                                             owl:versionIRI <http://w3id.org/CEON/ontology/flatglass_assessment/0.1/> ;
@@ -21,7 +21,7 @@
                                             vann:preferredNamespacePrefix "assess" ;
                                             vann:preferredNamespaceUri "http://w3id.org/CEON/ontology/flatglass_assessment/" ;
                                             rdfs:seeAlso <https://github.com/LiUSemWeb/T4V> ;
-					    owl:imports <http://w3id.org/CEON/ontology/flatglass/0.3/>
+					    owl:imports <http://w3id.org/CEON/ontology/flatglass/0.3/>;
                                             owl:versionInfo 0.1 .
 
 #################################################################
