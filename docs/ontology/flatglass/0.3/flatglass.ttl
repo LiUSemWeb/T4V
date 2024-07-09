@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/CEON/ontology/flatglass/#> .
+@prefix : <http://w3id.org/CEON/ontology/flatglass/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -22,7 +22,7 @@ vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
 vann:preferredNamespaceUri a owl:AnnotationProperty .
 
-<http://w3id.org/CEON/ontology/flatglass/> a owl:Ontology ;
+: a owl:Ontology ;
     dcterms:contributor "Robin Keskisärkkä" ;
     dcterms:created "2024-07-09" ;
     dcterms:creator "Eva Blomqvist" ;
@@ -48,96 +48,51 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
         "endast isolerglas"@sv ;
     rdfs:comment "An insulating glass unit (IGU) window only."@en .
 
-:NonRecyclableWindow a owl:Class ;
-    rdfs:subClassOf :Window ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :Window [ a owl:Class ;
-                        owl:unionOf ( [ a owl:Restriction ;
-                                    owl:hasValue true ;
-                                    owl:onProperty :fireGlass ] [ a owl:Restriction ;
-                                    owl:hasValue true ;
-                                    owl:onProperty :fireGlassWGel ] [ a owl:Restriction ;
-                                    owl:hasValue true ;
-                                    owl:onProperty :fireGlassWoGel ] [ a owl:Restriction ;
-                                    owl:hasValue true ;
-                                    owl:onProperty :wiredGlass ] ) ] ) ] .
-
 :PVC a :Material,
         owl:NamedIndividual ;
     rdfs:label "PVC" .
-
-:RecyclableWindowWBlinds a owl:Class ;
-    rdfs:subClassOf :RecyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsAsbestos ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsPCB ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :hasIntegratedBlind ] ) ] .
-
-:RecyclableWindowWFilmOnGlass a owl:Class ;
-    rdfs:subClassOf :RecyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsAsbestos ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsPCB ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :filmOnGlass ] ) ] .
-
-:RecyclableWindowWGeorgianBar a owl:Class ;
-    rdfs:subClassOf :RecyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsAsbestos ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsPCB ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :georgianBar ] ) ] .
-
-:RecyclableWindowWTemperedGlass a owl:Class ;
-    rdfs:subClassOf :RecyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsAsbestos ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :containsPCB ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :temperedGlass ] ) ] .
-
-:ReusableWindow a owl:Class ;
-    rdfs:subClassOf :Window ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( [ a owl:Class ;
-                        owl:unionOf ( [ a owl:Restriction ;
-                                    owl:hasValue :level37 ;
-                                    owl:onProperty :hasSoundReduction ] [ a owl:Restriction ;
-                                    owl:hasValue :level40 ;
-                                    owl:onProperty :hasSoundReduction ] ) ] [ a owl:Class ;
-                        owl:unionOf ( [ a owl:Restriction ;
-                                    owl:hasValue <http://w3id.org/CEON/ontology/flatglass/1point8> ;
-                                    owl:onProperty :hasUValue ] [ a owl:Restriction ;
-                                    owl:hasValue <http://w3id.org/CEON/ontology/flatglass/2point7> ;
-                                    owl:onProperty :hasUValue ] ) ] [ a owl:Restriction ;
-                        owl:hasValue :good ;
-                        owl:onProperty :hasFrameCondition ] [ a owl:Restriction ;
-                        owl:hasValue :Above63Perc ;
-                        owl:onProperty :hasLightTransmission ] ) ] .
 
 :WindowGlassType a owl:Class ;
     rdfs:subClassOf :BuildingElementType .
 
 :WindowType a owl:Class ;
     rdfs:subClassOf :BuildingElementType .
+
+<http://w3id.org/CEON/ontology/flatglass/connected1+1> a :WindowCompositionType,
+        owl:NamedIndividual ;
+    rdfs:label "connected 1+1"@en ;
+    rdfs:comment "A window consisting of two connected single-glass windows."@en .
+
+<http://w3id.org/CEON/ontology/flatglass/connected2+1> a :WindowCompositionType,
+        owl:NamedIndividual ;
+    rdfs:label "connected 2+1"@en ;
+    rdfs:comment "A window composed of a single glass window connected with an IGU window."@en .
+
+:filmThickerThan0point25 a owl:DatatypeProperty ;
+    rdfs:label "Folie dicker als 0,25 mm"@de,
+        "film thicker than 0.25mm"@en,
+        "épaisseur du film > 0,25 mm"@fr,
+        "film tjockare än 0,25mm"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :filmOnGlass .
+
+:fireGlassWGel a owl:DatatypeProperty ;
+    rdfs:label "fire glass with gel"@en,
+        "brandglas med gel"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
+:fireGlassWoGel a owl:DatatypeProperty ;
+    rdfs:label "fire glass without gel"@en,
+        "brandglas utan gel"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
 
 :fromInside a :DismountingDirection,
         owl:NamedIndividual ;
@@ -197,95 +152,44 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
         "bois"@fr,
         "trä"@sv .
 
-<http://w3id.org/CEON/ontology/flatglass/connected1+1> a :WindowCompositionType,
+:0point7 a :U-value,
         owl:NamedIndividual ;
-    rdfs:label "connected 1+1"@en ;
-    rdfs:comment "A window consisting of two connected single-glass windows."@en .
+    rdfs:label "0.7"@en,
+        "0,7"@sv .
 
-<http://w3id.org/CEON/ontology/flatglass/connected2+1> a :WindowCompositionType,
+:1point1 a :U-value,
         owl:NamedIndividual ;
-    rdfs:label "connected 2+1"@en ;
-    rdfs:comment "A window composed of a single glass window connected with an IGU window."@en .
+    rdfs:label "1.1"@en,
+        "1,1"@se .
+
+:1point8 a :U-value,
+        owl:NamedIndividual ;
+    rdfs:label "1.8"@en,
+        "1,8"@se .
+
+:2point7 a :U-value,
+        owl:NamedIndividual ;
+    rdfs:label "2.7"@en,
+        "2,7"@se .
+
+:Above63Perc a :LigthTransmissionLevel,
+        owl:NamedIndividual ;
+    rdfs:label ">63%" .
 
 :Below63Perc a :LigthTransmissionLevel,
         owl:NamedIndividual ;
     rdfs:label "<63%" .
 
-:DowncyclableWindowEnamelledGlass a owl:Class ;
-    rdfs:subClassOf :DowncyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :Window [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWoGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :wiredGlass ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :enamelledGlass ] ) ] .
-
-:DowncyclableWindowWBodyTintedGlass a owl:Class ;
-    rdfs:subClassOf :DowncyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :Window [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWoGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :wiredGlass ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :bodyTintedGlass ] ) ] .
-
-:DowncyclableWindowWThickFilm a owl:Class ;
-    rdfs:subClassOf :DowncyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :Window [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWoGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :wiredGlass ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :filmThickerThan0point25 ] ) ] .
-
-:DowncyclableWindowWithLaminatedGlass a owl:Class ;
-    rdfs:subClassOf :DowncyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :Window [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :bodyTintedGlass ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :enamelledGlass ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :filmThickerThan0point25 ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :fireGlassWoGel ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :wiredGlass ] ) ] [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :laminatedGlass ] ) ] .
-
-:RecyclableWindowWAsbestos a owl:Class ;
-    rdfs:subClassOf :RecyclableWindowWHazardousSubstance ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :RecyclableWindow [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :containsAsbestos ] ) ] .
-
-:RecyclableWindowWPCB a owl:Class ;
-    rdfs:subClassOf :RecyclableWindowWHazardousSubstance ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :RecyclableWindow [ a owl:Restriction ;
-                        owl:hasValue true ;
-                        owl:onProperty :containsPCB ] ) ] .
+:bodyTintedGlass a owl:DatatypeProperty ;
+    rdfs:label "gefärbtes Glas"@de,
+        "body tinted glass"@en,
+        "verre teinté dans la masse"@fr,
+        "genomfärgat glas"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/GlassColour" ;
+    rdfs:subPropertyOf :recycleParameterValue .
 
 :connected a owl:DatatypeProperty ;
     rdfs:label "Kastenfenster ja / nein"@de,
@@ -297,6 +201,25 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
     rdfs:domain :Window ;
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf :structuralValue .
+
+:containsAsbestos a owl:DatatypeProperty ;
+    rdfs:label "Asbestkitt ja/nein/nicht bekannt"@de,
+        "Asbestos Y/N"@en,
+        "Amiante O/N"@fr,
+        "Asbestkitt ja/nej/vet ej"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowFrame ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
+:containsPCB a owl:DatatypeProperty ;
+    rdfs:label "PCB ja/nein"@de,
+        "PCB Y/N"@en,
+        "PCB O/N"@fr,
+        "PCB ja/nej"@sv ;
+    rdfs:domain :Window ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
 
 :dismountingParameter a owl:ObjectProperty ;
     rdfs:domain :BuiltElement ;
@@ -311,6 +234,16 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf :structuralValue .
 
+:enamelledGlass a owl:DatatypeProperty ;
+    rdfs:label "emailliertes Glas"@de,
+        "enamelled glass"@en,
+        "verre émaillé"@fr,
+        "emaljerat glas"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
 :fair a :Condition,
         owl:NamedIndividual ;
     rdfs:label "fair"@en ;
@@ -318,6 +251,45 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
         "Fair quality, can maybe be reused or refurbished."@en,
         "moyen"@fr,
         "dålig"@sv .
+
+:fireGlass a owl:DatatypeProperty ;
+    rdfs:label "Brandschutzglas"@de,
+        "fire glass"@en,
+        "verre anti-feu"@fr,
+        "brandglas"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
+:georgianBar a owl:DatatypeProperty ;
+    rdfs:label "Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten"@de,
+        "Georgian bar in singl fram/IGU?"@en,
+        "barres géorgiennes"@fr,
+        "Spröjs i enkelglas/integrerad i isolerglas?"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
+:good a :Condition,
+        owl:NamedIndividual ;
+    rdfs:label "good" ;
+    rdfs:comment "gut"@de,
+        "Good quality of the structure, can be reused directly."@en,
+        "bon"@fr,
+        "bra"@sv .
+
+:hasFrameCondition a owl:ObjectProperty ;
+    rdfs:label "Zustand des Flügels"@de,
+        "has frame condition"@en,
+        "Etat du cadre"@fr,
+        "skick på fönsterbåge"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowFrame ) ] ;
+    rdfs:range :Condition ;
+    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition" ;
+    rdfs:subPropertyOf :reuseParameter .
 
 :hasFrameMaterial a owl:ObjectProperty ;
     rdfs:label "Flügelmaterial"@de,
@@ -329,10 +301,51 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
     rdfs:range :Material ;
     rdfs:subPropertyOf :hasMaterialComposition .
 
+:hasIntegratedBlind a owl:DatatypeProperty ;
+    rdfs:label "integrierte Jalousie"@de,
+        "integrated blind"@en,
+        "stores intégrés"@fr,
+        "integrerad persienn"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowFrame :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf :reuseParameterValue .
+
+:hasLightTransmission a owl:ObjectProperty ;
+    rdfs:label "Lichttransmission über/unter 63 Prozent"@de,
+        "LT above 63%"@en,
+        "Transmission lumineuse > 63 %"@fr,
+        "ljustransmission över /under 63%"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range :LigthTransmissionLevel ;
+    rdfs:subPropertyOf :hasStructure .
+
 :hasMaterialComposition a owl:ObjectProperty ;
     rdfs:domain :BuiltElement ;
     rdfs:range :Material ;
     rdfs:subPropertyOf :recyclingParameter .
+
+:hasSoundReduction a owl:ObjectProperty ;
+    rdfs:label "Schalldämmung 40/37/35/30"@de,
+        "Sound reduction 40/37/35/30"@en,
+        "Atténuation acoustique 40/37/35/30"@fr,
+        "ljudreduktion 40/37/35/30"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range :SoundReductionLevel ;
+    rdfs:subPropertyOf :hasStructure .
+
+:hasUValue a owl:ObjectProperty ;
+    rdfs:label "U-Wert 2,7/1,8/1,1/0,7"@de,
+        "u-value 2,7/1,8/1,1/0,7"@en,
+        "Uw 2,7/1,8/1,1/0,7"@fr,
+        "u-värde 2,7/1,8/1,1/0,7"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range :U-value ;
+    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance" ;
+    rdfs:subPropertyOf :hasStructure .
 
 :hasWindowComposition a owl:ObjectProperty ;
     rdfs:label "Fenstertyp"@de,
@@ -344,6 +357,17 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
     rdfs:range :WindowCompositionType ;
     rdfs:subPropertyOf :hasStructure .
 
+:laminatedGlass a owl:DatatypeProperty ;
+    rdfs:label "Verbundsicherheitsglas"@de,
+        "laminated glass"@en,
+        "verre feuilleté"@fr,
+        "lamellglas"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated" ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
 :level30 a :SoundReductionLevel,
         owl:NamedIndividual ;
     rdfs:label "30" .
@@ -351,6 +375,14 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
 :level35 a :SoundReductionLevel,
         owl:NamedIndividual ;
     rdfs:label "35" .
+
+:level37 a :SoundReductionLevel,
+        owl:NamedIndividual ;
+    rdfs:label "37" .
+
+:level40 a :SoundReductionLevel,
+        owl:NamedIndividual ;
+    rdfs:label "40" .
 
 :manufacturingMonthYear a owl:DatatypeProperty ;
     rdfs:label "produziert Jahr/Monat"@de,
@@ -409,6 +441,17 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf :recycleParameterValue .
 
+:temperedGlass a owl:DatatypeProperty ;
+    rdfs:label "gehärtetes Glas"@de,
+        "tempered glass"@en,
+        "verre trempé"@fr,
+        "härdat glas"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsTempered" ;
+    rdfs:subPropertyOf :recycleParameterValue .
+
 :totalGlassThickness a owl:DatatypeProperty ;
     rdfs:label "gesamte Glasdicke"@de,
         "total glass thickness"@en,
@@ -437,117 +480,18 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
     rdfs:range xsd:boolean ;
     rdfs:subPropertyOf :structuralValue .
 
-<http://w3id.org/CEON/ontology/flatglass/0point7> a :U-value,
-        owl:NamedIndividual ;
-    rdfs:label "0.7"@en,
-        "0,7"@sv .
-
-<http://w3id.org/CEON/ontology/flatglass/1point1> a :U-value,
-        owl:NamedIndividual ;
-    rdfs:label "1.1"@en,
-        "1,1"@se .
-
-:Above63Perc a :LigthTransmissionLevel,
-        owl:NamedIndividual ;
-    rdfs:label ">63%" .
+:wiredGlass a owl:DatatypeProperty ;
+    rdfs:label "Drahtglas"@de,
+        "wired glass"@en,
+        "verre armé"@fr,
+        "trådglas"@sv ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Window :WindowGlass ) ] ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired" ;
+    rdfs:subPropertyOf :recycleParameterValue .
 
 :DismountingParameter a owl:Class .
-
-:RecyclableWindowWHazardousSubstance a owl:Class ;
-    rdfs:subClassOf :RecyclableWindow ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( :RecyclableWindowWAsbestos :RecyclableWindowWPCB ) ] .
-
-:georgianBar a owl:DatatypeProperty ;
-    rdfs:label "Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten"@de,
-        "Georgian bar in singl fram/IGU?"@en,
-        "barres géorgiennes"@fr,
-        "Spröjs i enkelglas/integrerad i isolerglas?"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
-:good a :Condition,
-        owl:NamedIndividual ;
-    rdfs:label "good" ;
-    rdfs:comment "gut"@de,
-        "Good quality of the structure, can be reused directly."@en,
-        "bon"@fr,
-        "bra"@sv .
-
-:hasComponent a owl:ObjectProperty,
-        owl:TransitiveProperty ;
-    rdfs:label "has component"@en,
-        "har del"@sv ;
-    rdfs:domain :BuiltElement ;
-    rdfs:range :BuiltElement .
-
-:hasFrameCondition a owl:ObjectProperty ;
-    rdfs:label "Zustand des Flügels"@de,
-        "has frame condition"@en,
-        "Etat du cadre"@fr,
-        "skick på fönsterbåge"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowFrame ) ] ;
-    rdfs:range :Condition ;
-    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition" ;
-    rdfs:subPropertyOf :reuseParameter .
-
-:hasIntegratedBlind a owl:DatatypeProperty ;
-    rdfs:label "integrierte Jalousie"@de,
-        "integrated blind"@en,
-        "stores intégrés"@fr,
-        "integrerad persienn"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowFrame :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :reuseParameterValue .
-
-:hasLightTransmission a owl:ObjectProperty ;
-    rdfs:label "Lichttransmission über/unter 63 Prozent"@de,
-        "LT above 63%"@en,
-        "Transmission lumineuse > 63 %"@fr,
-        "ljustransmission över /under 63%"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range :LigthTransmissionLevel ;
-    rdfs:subPropertyOf :hasStructure .
-
-:level37 a :SoundReductionLevel,
-        owl:NamedIndividual ;
-    rdfs:label "37" .
-
-:level40 a :SoundReductionLevel,
-        owl:NamedIndividual ;
-    rdfs:label "40" .
-
-:reuseParameterValue a owl:DatatypeProperty .
-
-:temperedGlass a owl:DatatypeProperty ;
-    rdfs:label "gehärtetes Glas"@de,
-        "tempered glass"@en,
-        "verre trempé"@fr,
-        "härdat glas"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsTempered" ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
-<http://w3id.org/CEON/ontology/flatglass/1point8> a :U-value,
-        owl:NamedIndividual ;
-    rdfs:label "1.8"@en,
-        "1,8"@se .
-
-<http://w3id.org/CEON/ontology/flatglass/2point7> a :U-value,
-        owl:NamedIndividual ;
-    rdfs:label "2.7"@en,
-        "2,7"@se .
-
-xsd:gMonthYear a rdfs:Datatype .
-
-:BuildingElementType a owl:Class .
 
 :filmOnGlass a owl:DatatypeProperty ;
     rdfs:label "foliertes Glas (Transparenz/Sonnenschutzfolie)"@de,
@@ -560,93 +504,28 @@ xsd:gMonthYear a rdfs:Datatype .
     rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsCoated" ;
     rdfs:subPropertyOf :recycleParameterValue .
 
-:filmThickerThan0point25 a owl:DatatypeProperty ;
-    rdfs:label "Folie dicker als 0,25 mm"@de,
-        "film thicker than 0.25mm"@en,
-        "épaisseur du film > 0,25 mm"@fr,
-        "film tjockare än 0,25mm"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :filmOnGlass .
+:hasComponent a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has component"@en,
+        "har del"@sv ;
+    rdfs:domain :BuiltElement ;
+    rdfs:range :BuiltElement .
 
-:fireGlass a owl:DatatypeProperty ;
-    rdfs:label "Brandschutzglas"@de,
-        "fire glass"@en,
-        "verre anti-feu"@fr,
-        "brandglas"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
+:reuseParameterValue a owl:DatatypeProperty .
 
-:hasSoundReduction a owl:ObjectProperty ;
-    rdfs:label "Schalldämmung 40/37/35/30"@de,
-        "Sound reduction 40/37/35/30"@en,
-        "Atténuation acoustique 40/37/35/30"@fr,
-        "ljudreduktion 40/37/35/30"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range :SoundReductionLevel ;
-    rdfs:subPropertyOf :hasStructure .
+xsd:gMonthYear a rdfs:Datatype .
 
-:hasUValue a owl:ObjectProperty ;
-    rdfs:label "U-Wert 2,7/1,8/1,1/0,7"@de,
-        "u-value 2,7/1,8/1,1/0,7"@en,
-        "Uw 2,7/1,8/1,1/0,7"@fr,
-        "u-värde 2,7/1,8/1,1/0,7"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range :U-value ;
-    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance" ;
-    rdfs:subPropertyOf :hasStructure .
-
-:laminatedGlass a owl:DatatypeProperty ;
-    rdfs:label "Verbundsicherheitsglas"@de,
-        "laminated glass"@en,
-        "verre feuilleté"@fr,
-        "lamellglas"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated" ;
-    rdfs:subPropertyOf :recycleParameterValue .
+:BuildingElementType a owl:Class .
 
 :reuseParameter a owl:ObjectProperty .
 
 :DismountingDirection a owl:Class ;
     rdfs:subClassOf :DismountingParameter .
 
-:DowncyclableWindow a owl:Class ;
-    rdfs:subClassOf :Window ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( :DowncyclableWindowEnamelledGlass :DowncyclableWindowWBodyTintedGlass :DowncyclableWindowWThickFilm :DowncyclableWindowWithLaminatedGlass ) ] .
-
 :LigthTransmissionLevel a owl:Class ;
     rdfs:subClassOf :StructuralParameter ;
     owl:equivalentClass [ a owl:Class ;
             owl:oneOf ( :Above63Perc :Below63Perc ) ] .
-
-:bodyTintedGlass a owl:DatatypeProperty ;
-    rdfs:label "gefärbtes Glas"@de,
-        "body tinted glass"@en,
-        "verre teinté dans la masse"@fr,
-        "genomfärgat glas"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/GlassColour" ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
-:enamelledGlass a owl:DatatypeProperty ;
-    rdfs:label "emailliertes Glas"@de,
-        "enamelled glass"@en,
-        "verre émaillé"@fr,
-        "emaljerat glas"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
 
 :hasStructure a owl:ObjectProperty ;
     rdfs:domain :BuiltElement ;
@@ -670,88 +549,18 @@ xsd:gMonthYear a rdfs:Datatype .
 :U-value a owl:Class ;
     rdfs:subClassOf :StructuralParameter ;
     owl:equivalentClass [ a owl:Class ;
-            owl:oneOf ( <http://w3id.org/CEON/ontology/flatglass/0point7> <http://w3id.org/CEON/ontology/flatglass/1point1> <http://w3id.org/CEON/ontology/flatglass/1point8> <http://w3id.org/CEON/ontology/flatglass/2point7> ) ] .
+            owl:oneOf ( :0point7 :1point1 :1point8 :2point7 ) ] .
 
 :WindowCompositionType a owl:Class ;
     rdfs:subClassOf :StructuralParameter .
 
-:containsAsbestos a owl:DatatypeProperty ;
-    rdfs:label "Asbestkitt ja/nein/nicht bekannt"@de,
-        "Asbestos Y/N"@en,
-        "Amiante O/N"@fr,
-        "Asbestkitt ja/nej/vet ej"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowFrame ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
-:containsPCB a owl:DatatypeProperty ;
-    rdfs:label "PCB ja/nein"@de,
-        "PCB Y/N"@en,
-        "PCB O/N"@fr,
-        "PCB ja/nej"@sv ;
-    rdfs:domain :Window ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
-:fireGlassWGel a owl:DatatypeProperty ;
-    rdfs:label "fire glass with gel"@en,
-        "brandglas med gel"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
-:fireGlassWoGel a owl:DatatypeProperty ;
-    rdfs:label "fire glass without gel"@en,
-        "brandglas utan gel"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:subPropertyOf :recycleParameterValue .
-
 :Material a owl:Class .
-
-:wiredGlass a owl:DatatypeProperty ;
-    rdfs:label "Drahtglas"@de,
-        "wired glass"@en,
-        "verre armé"@fr,
-        "trådglas"@sv ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( :Window :WindowGlass ) ] ;
-    rdfs:range xsd:boolean ;
-    rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired" ;
-    rdfs:subPropertyOf :recycleParameterValue .
 
 :WindowFrame a owl:Class ;
     rdfs:subClassOf :BuiltElement .
 
 :BuiltElement a owl:Class ;
     rdfs:seeAlso "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltElement" .
-
-:RecyclableWindow a owl:Class ;
-    rdfs:subClassOf :Window ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( :Window [ a owl:Class ;
-                        owl:intersectionOf ( [ a owl:Class ;
-                                    owl:unionOf ( [ a owl:Class ;
-                                                owl:intersectionOf ( [ a owl:Restriction ;
-                                                            owl:hasValue false ;
-                                                            owl:onProperty :fireGlassWGel ] [ a owl:Restriction ;
-                                                            owl:hasValue false ;
-                                                            owl:onProperty :fireGlassWoGel ] ) ] [ a owl:Restriction ;
-                                                owl:hasValue false ;
-                                                owl:onProperty :fireGlass ] ) ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :bodyTintedGlass ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :enamelledGlass ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :filmThickerThan0point25 ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :laminatedGlass ] [ a owl:Restriction ;
-                                    owl:hasValue false ;
-                                    owl:onProperty :wiredGlass ] ) ] ) ] .
 
 :recycleParameterValue a owl:DatatypeProperty .
 

@@ -1,0 +1,232 @@
+@prefix : <http://w3id.org/CEON/ontology/flatglass_assessment/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix window: <http://w3id.org/CEON/ontology/flatglass/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+: a owl:Ontology ;
+    dcterms:contributor "Robin Keskisärkkä" ;
+    dcterms:created "2024-07-09" ;
+    dcterms:creator "Eva Blomqvist" ;
+    dcterms:description "Extension of the flatglass ontology to represent resoning on reuse and recycling " ;
+    dcterms:license "https://github.com/LiUSemWeb/DPP/blob/master/LICENSE" ;
+    dcterms:title "Flat Glass Reuse and Recycling Assessment Ontology" ;
+    vann:preferredNamespacePrefix "assess" ;
+    vann:preferredNamespaceUri "http://w3id.org/CEON/ontology/flatglass_assessment/" ;
+    rdfs:seeAlso <https://github.com/LiUSemWeb/T4V> ;
+    owl:imports <http://w3id.org/CEON/ontology/flatglass/0.3/> ;
+    owl:versionIRI <http://w3id.org/CEON/ontology/flatglass_assessment/0.1/> ;
+    owl:versionInfo 0.1 .
+
+:NonRecyclableWindow a owl:Class ;
+    rdfs:subClassOf window:Window ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( window:Window [ a owl:Class ;
+                        owl:unionOf ( [ a owl:Restriction ;
+                                    owl:hasValue true ;
+                                    owl:onProperty window:fireGlass ] [ a owl:Restriction ;
+                                    owl:hasValue true ;
+                                    owl:onProperty window:fireGlassWGel ] [ a owl:Restriction ;
+                                    owl:hasValue true ;
+                                    owl:onProperty window:fireGlassWoGel ] [ a owl:Restriction ;
+                                    owl:hasValue true ;
+                                    owl:onProperty window:wiredGlass ] ) ] ) ] .
+
+:RecyclableWindowWBlinds a owl:Class ;
+    rdfs:subClassOf :RecyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsAsbestos ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsPCB ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:hasIntegratedBlind ] ) ] .
+
+:RecyclableWindowWFilmOnGlass a owl:Class ;
+    rdfs:subClassOf :RecyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsAsbestos ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsPCB ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:filmOnGlass ] ) ] .
+
+:RecyclableWindowWGeorgianBar a owl:Class ;
+    rdfs:subClassOf :RecyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsAsbestos ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsPCB ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:georgianBar ] ) ] .
+
+:RecyclableWindowWTemperedGlass a owl:Class ;
+    rdfs:subClassOf window:RecyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :RecyclableWindow [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsAsbestos ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:containsPCB ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:temperedGlass ] ) ] .
+
+:ReusableWindow a owl:Class ;
+    rdfs:subClassOf window:Window ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:unionOf ( [ a owl:Restriction ;
+                                    owl:hasValue window:level37 ;
+                                    owl:onProperty window:hasSoundReduction ] [ a owl:Restriction ;
+                                    owl:hasValue window:level40 ;
+                                    owl:onProperty window:hasSoundReduction ] ) ] [ a owl:Class ;
+                        owl:unionOf ( [ a owl:Restriction ;
+                                    owl:hasValue window:1point8 ;
+                                    owl:onProperty window:hasUValue ] [ a owl:Restriction ;
+                                    owl:hasValue window:2point7 ;
+                                    owl:onProperty window:hasUValue ] ) ] [ a owl:Restriction ;
+                        owl:hasValue window:good ;
+                        owl:onProperty window:hasFrameCondition ] [ a owl:Restriction ;
+                        owl:hasValue window:Above63Perc ;
+                        owl:onProperty window:hasLightTransmission ] ) ] .
+
+xsd:gMonthYear a rdfs:Datatype .
+
+:DowncyclableWindowEnamelledGlass a owl:Class ;
+    rdfs:subClassOf :DowncyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( window:Window [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWoGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:wiredGlass ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:enamelledGlass ] ) ] .
+
+:DowncyclableWindowWBodyTintedGlass a owl:Class ;
+    rdfs:subClassOf :DowncyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( window:Window [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWoGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:wiredGlass ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:bodyTintedGlass ] ) ] .
+
+:DowncyclableWindowWThickFilm a owl:Class ;
+    rdfs:subClassOf :DowncyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( window:Window [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWoGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:wiredGlass ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:filmThickerThan0point25 ] ) ] .
+
+:DowncyclableWindowWithLaminatedGlass a owl:Class ;
+    rdfs:subClassOf :DowncyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( window:Window [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:bodyTintedGlass ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:enamelledGlass ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:filmThickerThan0point25 ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:fireGlassWoGel ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:wiredGlass ] ) ] [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:laminatedGlass ] ) ] .
+
+:RecyclableWindowWAsbestos a owl:Class ;
+    rdfs:subClassOf :RecyclableWindowWHazardousSubstance ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :RecyclableWindow [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:containsAsbestos ] ) ] .
+
+:RecyclableWindowWPCB a owl:Class ;
+    rdfs:subClassOf :RecyclableWindowWHazardousSubstance ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( :RecyclableWindow [ a owl:Restriction ;
+                        owl:hasValue true ;
+                        owl:onProperty window:containsPCB ] ) ] .
+
+:RecyclableWindowWHazardousSubstance a owl:Class ;
+    rdfs:subClassOf :RecyclableWindow ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :RecyclableWindowWAsbestos :RecyclableWindowWPCB ) ] .
+
+:DowncyclableWindow a owl:Class ;
+    rdfs:subClassOf window:Window ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :DowncyclableWindowEnamelledGlass :DowncyclableWindowWBodyTintedGlass :DowncyclableWindowWThickFilm :DowncyclableWindowWithLaminatedGlass ) ] .
+
+:RecyclableWindow a owl:Class ;
+    rdfs:subClassOf window:Window ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( window:Window [ a owl:Class ;
+                        owl:intersectionOf ( [ a owl:Class ;
+                                    owl:unionOf ( [ a owl:Class ;
+                                                owl:intersectionOf ( [ a owl:Restriction ;
+                                                            owl:hasValue false ;
+                                                            owl:onProperty window:fireGlassWGel ] [ a owl:Restriction ;
+                                                            owl:hasValue false ;
+                                                            owl:onProperty window:fireGlassWoGel ] ) ] [ a owl:Restriction ;
+                                                owl:hasValue false ;
+                                                owl:onProperty window:fireGlass ] ) ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:bodyTintedGlass ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:enamelledGlass ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:filmThickerThan0point25 ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:laminatedGlass ] [ a owl:Restriction ;
+                                    owl:hasValue false ;
+                                    owl:onProperty window:wiredGlass ] ) ] ) ] .
+
