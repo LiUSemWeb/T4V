@@ -515,6 +515,16 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                                    "tillverkningsmånad/år (mmÅÅ)"@sv .
 
 
+###  http://w3id.org/CEON/ontology/flatglass/numberOfPanes
+:numberOfPanes rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Window
+                                           :WindowBatch
+                                         )
+                           ] ;
+               rdfs:range xsd:int .
+
+
 ###  http://w3id.org/CEON/ontology/flatglass/numberOfWindows
 :numberOfWindows rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:int .
