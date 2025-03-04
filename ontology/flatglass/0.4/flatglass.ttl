@@ -72,7 +72,11 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 
 ###  http://w3id.org/CEON/ontology/flatglass/dismountingParameter
 :dismountingParameter rdf:type owl:ObjectProperty ;
-                      rdfs:domain :BuiltElement ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :BuiltElement
+                                                  :BuiltElementBatch
+                                                )
+                                  ] ;
                       rdfs:range :DismountingParameter .
 
 
@@ -97,6 +101,7 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                    rdfs:subPropertyOf :reuseParameter ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( :Window
+                                               :WindowBatch
                                                :WindowFrame
                                              )
                                ] ;
@@ -113,6 +118,7 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                   rdfs:subPropertyOf :hasMaterialComposition ;
                   rdfs:domain [ rdf:type owl:Class ;
                                 owl:unionOf ( :Window
+                                              :WindowBatch
                                               :WindowFrame
                                             )
                               ] ;
@@ -128,6 +134,7 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasStructure ;
                       rdfs:domain [ rdf:type owl:Class ;
                                     owl:unionOf ( :Window
+                                                  :WindowBatch
                                                   :WindowGlass
                                                 )
                                   ] ;
@@ -141,7 +148,11 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 ###  http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition
 :hasMaterialComposition rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :recyclingParameter ;
-                        rdfs:domain :BuiltElement ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( :BuiltElement
+                                                    :BuiltElementBatch
+                                                  )
+                                    ] ;
                         rdfs:range :Material .
 
 
@@ -150,6 +161,7 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                    rdfs:subPropertyOf :hasStructure ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( :Window
+                                               :WindowBatch
                                                :WindowGlass
                                              )
                                ] ;
@@ -163,7 +175,11 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 ###  http://w3id.org/CEON/ontology/flatglass/hasStructure
 :hasStructure rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :reuseParameter ;
-              rdfs:domain :BuiltElement ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :BuiltElement
+                                          :BuiltElementBatch
+                                        )
+                          ] ;
               rdfs:range :StructuralParameter .
 
 
@@ -179,6 +195,7 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
            rdfs:subPropertyOf :hasStructure ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( :Window
+                                       :WindowBatch
                                        :WindowGlass
                                      )
                        ] ;
@@ -195,6 +212,7 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasStructure ;
                       rdfs:domain [ rdf:type owl:Class ;
                                     owl:unionOf ( :Window
+                                                  :WindowBatch
                                                   :WindowGlass
                                                 )
                                   ] ;
@@ -211,7 +229,12 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/recyclingParameter
-:recyclingParameter rdf:type owl:ObjectProperty .
+:recyclingParameter rdf:type owl:ObjectProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :BuiltElement
+                                                :BuiltElementBatch
+                                              )
+                                ] .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/replacementRecommendation
@@ -230,13 +253,22 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/reuseParameter
-:reuseParameter rdf:type owl:ObjectProperty .
+:reuseParameter rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :BuiltElement
+                                            :BuiltElementBatch
+                                          )
+                            ] .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/windowDismounting
 :windowDismounting rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :dismountingParameter ;
-                   rdfs:domain :Window ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Window
+                                               :WindowBatch
+                                             )
+                               ] ;
                    rdfs:range :DismountingDirection ;
                    rdfs:label "demonteras utifrån/inifrån"@sv ,
                               "demontiert von außen / innen"@de ,
@@ -483,6 +515,11 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                                    "tillverkningsmånad/år (mmÅÅ)"@sv .
 
 
+###  http://w3id.org/CEON/ontology/flatglass/numberOfWindows
+:numberOfWindows rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:int .
+
+
 ###  http://w3id.org/CEON/ontology/flatglass/openable
 :openable rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf :structuralValue ;
@@ -506,11 +543,21 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/recycleParameterValue
-:recycleParameterValue rdf:type owl:DatatypeProperty .
+:recycleParameterValue rdf:type owl:DatatypeProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( :BuiltElement
+                                                   :BuiltElementBatch
+                                                 )
+                                   ] .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/reuseParameterValue
-:reuseParameterValue rdf:type owl:DatatypeProperty .
+:reuseParameterValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :BuiltElement
+                                                 :BuiltElementBatch
+                                               )
+                                 ] .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/sizeInSqrM
@@ -557,7 +604,12 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/structuralValue
-:structuralValue rdf:type owl:DatatypeProperty .
+:structuralValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :BuiltElement
+                                             :BuiltElementBatch
+                                           )
+                             ] .
 
 
 ###  http://w3id.org/CEON/ontology/flatglass/temperedGlass
@@ -891,6 +943,11 @@ xsd:gMonthYear rdf:type rdfs:Datatype .
                              [ rdf:type owl:Restriction ;
                                owl:onProperty :hasBatchMember ;
                                owl:allValuesFrom :Window
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :numberOfWindows ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:int
                              ] .
 
 
