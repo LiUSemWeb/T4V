@@ -6,37 +6,21 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b6">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasUValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb13"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
+    <rdfs:label xml:lang="de">U-Wert 2,7/1,8/1,1/0,7</rdfs:label>
+    <rdfs:label xml:lang="fr">Uw 2,7/1,8/1,1/0,7</rdfs:label>
+    <rdfs:label xml:lang="en">u-value 2,7/1,8/1,1/0,7</rdfs:label>
+    <rdfs:label xml:lang="sv">u-värde 2,7/1,8/1,1/0,7</rdfs:label>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b38">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b39"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b10">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b11"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/filmOnGlass"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b34"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">Folie dicker als 0,25 mm</rdfs:label>
-    <rdfs:label xml:lang="en">film thicker than 0.25mm</rdfs:label>
-    <rdfs:label xml:lang="sv">film tjockare än 0,25mm</rdfs:label>
-    <rdfs:label xml:lang="fr">épaisseur du film &gt; 0,25 mm</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b56">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b57"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b114">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/filmOnGlass"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/dismountingParameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingParameter"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/door">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -48,23 +32,199 @@
     <rdfs:label xml:lang="sv">dörr</rdfs:label>
     <rdfs:label xml:lang="fr">porte</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b134">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b105"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b135"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb136">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb107"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb137"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b15">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasWindowComposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb16"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
+    <rdfs:label xml:lang="de">Fenstertyp</rdfs:label>
+    <rdfs:label xml:lang="sv">fönstertyp</rdfs:label>
+    <rdfs:label xml:lang="fr">type de fenêtre</rdfs:label>
+    <rdfs:label xml:lang="en">window type</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fireGlass">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/openable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/structuralValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb153">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb124"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb154"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Below63Perc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
+    <rdfs:label>&lt;63%</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuildingElementType"/>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Attributes/ElementType</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb133">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb104"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb134"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb79">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb80"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb116">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/georgianBar"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb67">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb68"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/IGUonly">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
+    <rdfs:comment xml:lang="en">An insulating glass unit (IGU) window only.</rdfs:comment>
+    <rdfs:label xml:lang="en">IGU only</rdfs:label>
+    <rdfs:label xml:lang="de">Nur Isolierglas</rdfs:label>
+    <rdfs:label xml:lang="fr">Vitrage Isolant seulement</rdfs:label>
+    <rdfs:label xml:lang="sv">endast isolerglas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/windowDoor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/structuralValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">Fenstertür</rdfs:label>
+    <rdfs:label xml:lang="sv">fönsterdörr</rdfs:label>
+    <rdfs:label xml:lang="fr">porte-fenêtre</rdfs:label>
+    <rdfs:label xml:lang="en">window door</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb49"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">integrated blind</rdfs:label>
+    <rdfs:label xml:lang="sv">integrerad persienn</rdfs:label>
+    <rdfs:label xml:lang="de">integrierte Jalousie</rdfs:label>
+    <rdfs:label xml:lang="fr">stores intégrés</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb89"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/connected">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/structuralValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment xml:lang="en">A window composed of two connected glass panes.</rdfs:comment>
+    <rdfs:comment xml:lang="se">Ett fönster some består att två kopplade rutor.</rdfs:comment>
+    <rdfs:label xml:lang="de">Kastenfenster ja / nein</rdfs:label>
+    <rdfs:label xml:lang="en">connected</rdfs:label>
+    <rdfs:label xml:lang="fr">double fenêtre</rdfs:label>
+    <rdfs:label xml:lang="se">kopplat</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb107">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasUValue"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb135">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb106"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb136"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb152">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb123"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb153"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/size">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b37"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb63"/>
+    <rdfs:label xml:lang="de">Größe</rdfs:label>
+    <rdfs:label xml:lang="en">size</rdfs:label>
+    <rdfs:label xml:lang="sv">storlek</rdfs:label>
+    <rdfs:label xml:lang="fr">taille</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb119">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/patternedGlass"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb23">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/replacementRecommendation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameter"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdfs:range rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb19"/>
+    <rdfs:label xml:lang="de">Empfehlung für den Austausch von Glas/Fenster</rdfs:label>
+    <rdfs:label xml:lang="sv">bytesrekommendation glas/fönster</rdfs:label>
+    <rdfs:label xml:lang="fr">recommandation pour le remplacement des vitres/fenêtres</rdfs:label>
+    <rdfs:label xml:lang="en">replacement frame or glass</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb74">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb75"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasComponent"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb113">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/enamelledGlass"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb111">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/containsPCB"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowGlassType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuildingElementType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/containsPCB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">Brandschutzglas</rdfs:label>
-    <rdfs:label xml:lang="sv">brandglas</rdfs:label>
-    <rdfs:label xml:lang="en">fire glass</rdfs:label>
-    <rdfs:label xml:lang="fr">verre anti-feu</rdfs:label>
+    <rdfs:label xml:lang="fr">PCB O/N</rdfs:label>
+    <rdfs:label xml:lang="en">PCB Y/N</rdfs:label>
+    <rdfs:label xml:lang="de">PCB ja/nein</rdfs:label>
+    <rdfs:label xml:lang="sv">PCB ja/nej</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb126">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/size"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb26">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb27"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -80,104 +240,32 @@
     <rdfs:seeAlso rdf:resource="https://github.com/LiUSemWeb/T4V"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b29">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b30"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/structuralValue">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fireGlass">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb37"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">Brandschutzglas</rdfs:label>
+    <rdfs:label xml:lang="sv">brandglas</rdfs:label>
+    <rdfs:label xml:lang="en">fire glass</rdfs:label>
+    <rdfs:label xml:lang="fr">verre anti-feu</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b86"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/wiredGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb79"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">Drahtglas</rdfs:label>
+    <rdfs:label xml:lang="sv">trådglas</rdfs:label>
+    <rdfs:label xml:lang="fr">verre armé</rdfs:label>
+    <rdfs:label xml:lang="en">wired glass</rdfs:label>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b89"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b106">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasSoundReduction"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b119">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/patternedGlass"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b57">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b58"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b118">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/laminatedGlass"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/replacementRecommendation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameter"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdfs:range rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b19"/>
-    <rdfs:label xml:lang="de">Empfehlung für den Austausch von Glas/Fenster</rdfs:label>
-    <rdfs:label xml:lang="sv">bytesrekommendation glas/fönster</rdfs:label>
-    <rdfs:label xml:lang="fr">recommandation pour le remplacement des vitres/fenêtres</rdfs:label>
-    <rdfs:label xml:lang="en">replacement frame or glass</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasFrameCondition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameter"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b1"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
-    <rdfs:label xml:lang="fr">Etat du cadre</rdfs:label>
-    <rdfs:label xml:lang="de">Zustand des Flügels</rdfs:label>
-    <rdfs:label xml:lang="en">has frame condition</rdfs:label>
-    <rdfs:label xml:lang="sv">skick på fönsterbåge</rdfs:label>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b11">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b12"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b28">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b29"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b64">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b65"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b109">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b53">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b54"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fromOutside">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/connected2+1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingDirection"/>
-    <rdfs:comment xml:lang="en">Mounted from the outside, needs to be dismounted from the outside.</rdfs:comment>
-    <rdfs:label xml:lang="fr">de l'extérieur</rdfs:label>
-    <rdfs:label xml:lang="en">from outside</rdfs:label>
-    <rdfs:label xml:lang="sv">utifrån</rdfs:label>
-    <rdfs:label xml:lang="de">von außen</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level35">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
-    <rdfs:label>35</rdfs:label>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
+    <rdfs:comment xml:lang="en">A window composed of a single glass window connected with an IGU window.</rdfs:comment>
+    <rdfs:label xml:lang="en">connected 2+1</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fair">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -188,62 +276,230 @@
     <rdfs:comment xml:lang="de">schlecht</rdfs:comment>
     <rdfs:label xml:lang="en">fair</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/laminatedGlass">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb129">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb100"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb130"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasFrameCondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameter"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb1"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
+    <rdfs:label xml:lang="fr">Etat du cadre</rdfs:label>
+    <rdfs:label xml:lang="de">Zustand des Flügels</rdfs:label>
+    <rdfs:label xml:lang="en">has frame condition</rdfs:label>
+    <rdfs:label xml:lang="sv">skick på fönsterbåge</rdfs:label>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb138">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb109"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb139"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb106">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasSoundReduction"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb4"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
+    <rdfs:label xml:lang="de">Flügelmaterial</rdfs:label>
+    <rdfs:label xml:lang="en">has frame material</rdfs:label>
+    <rdfs:label xml:lang="sv">material i båge</rdfs:label>
+    <rdfs:label xml:lang="fr">matériel de cadre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fromOutside">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingDirection"/>
+    <rdfs:comment xml:lang="en">Mounted from the outside, needs to be dismounted from the outside.</rdfs:comment>
+    <rdfs:label xml:lang="fr">de l'extérieur</rdfs:label>
+    <rdfs:label xml:lang="en">from outside</rdfs:label>
+    <rdfs:label xml:lang="sv">utifrån</rdfs:label>
+    <rdfs:label xml:lang="de">von außen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level30">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
+    <rdfs:label>30</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/containsAsbestos">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b53"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb25"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">Verbundsicherheitsglas</rdfs:label>
-    <rdfs:label xml:lang="sv">lamellglas</rdfs:label>
-    <rdfs:label xml:lang="en">laminated glass</rdfs:label>
-    <rdfs:label xml:lang="fr">verre feuilleté</rdfs:label>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated</rdfs:seeAlso>
+    <rdfs:label xml:lang="fr">Amiante O/N</rdfs:label>
+    <rdfs:label xml:lang="de">Asbestkitt ja/nein/nicht bekannt</rdfs:label>
+    <rdfs:label xml:lang="sv">Asbestkitt ja/nej/vet ej</rdfs:label>
+    <rdfs:label xml:lang="en">Asbestos Y/N</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/steel">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
-    <rdfs:label xml:lang="de">Stahl</rdfs:label>
-    <rdfs:label xml:lang="en">Steel</rdfs:label>
-    <rdfs:label xml:lang="fr">acier</rdfs:label>
-    <rdfs:label xml:lang="sv">stål</rdfs:label>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/stampOnGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb70"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">stamp on glass</rdfs:label>
+    <rdfs:label xml:lang="sv">stämplat glas</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b8">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/reuseParameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb48">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb28">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb29"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasSoundReduction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb10"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
+    <rdfs:label xml:lang="fr">Atténuation acoustique 40/37/35/30</rdfs:label>
+    <rdfs:label xml:lang="de">Schalldämmung 40/37/35/30</rdfs:label>
+    <rdfs:label xml:lang="en">Sound reduction 40/37/35/30</rdfs:label>
+    <rdfs:label xml:lang="sv">ljudreduktion 40/37/35/30</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb30">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb63">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb64"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb35">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b9"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb36"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b112">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb43"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="sv">brandglas utan gel</rdfs:label>
+    <rdfs:label xml:lang="en">fire glass without gel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb115">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/door"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/fireGlass"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b86">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:oneOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b87"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb144">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb115"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb145"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/containsPCB">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb104">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasFrameCondition"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Condition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb82"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/filmOnGlass"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb34"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">Folie dicker als 0,25 mm</rdfs:label>
+    <rdfs:label xml:lang="en">film thicker than 0.25mm</rdfs:label>
+    <rdfs:label xml:lang="sv">film tjockare än 0,25mm</rdfs:label>
+    <rdfs:label xml:lang="fr">épaisseur du film &gt; 0,25 mm</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fireGlassWGel">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb40"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="fr">PCB O/N</rdfs:label>
-    <rdfs:label xml:lang="en">PCB Y/N</rdfs:label>
-    <rdfs:label xml:lang="de">PCB ja/nein</rdfs:label>
-    <rdfs:label xml:lang="sv">PCB ja/nej</rdfs:label>
+    <rdfs:label xml:lang="sv">brandglas med gel</rdfs:label>
+    <rdfs:label xml:lang="en">fire glass with gel</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b23">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b24"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/solarControlGlass">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/temperedGlass">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b67"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb73"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">Sonnenschutzglas</rdfs:label>
-    <rdfs:label xml:lang="fr">contrôle solaire</rdfs:label>
-    <rdfs:label xml:lang="en">solar control glass</rdfs:label>
-    <rdfs:label xml:lang="sv">solskyddsglas</rdfs:label>
+    <rdfs:label xml:lang="de">gehärtetes Glas</rdfs:label>
+    <rdfs:label xml:lang="sv">härdat glas</rdfs:label>
+    <rdfs:label xml:lang="en">tempered glass</rdfs:label>
+    <rdfs:label xml:lang="fr">verre trempé</rdfs:label>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsTempered</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb43">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb44"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb58">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb59"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb21">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/filmOnGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb31"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">film on glass</rdfs:label>
+    <rdfs:label xml:lang="fr">film sur le verre</rdfs:label>
+    <rdfs:label xml:lang="sv">filmat glas (insyn/solskyddsfilm)</rdfs:label>
+    <rdfs:label xml:lang="de">foliertes Glas (Transparenz/Sonnenschutzfolie)</rdfs:label>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsCoated</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameter"/>
+    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/enamelledGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb28"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">emailliertes Glas</rdfs:label>
+    <rdfs:label xml:lang="sv">emaljerat glas</rdfs:label>
+    <rdfs:label xml:lang="en">enamelled glass</rdfs:label>
+    <rdfs:label xml:lang="fr">verre émaillé</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb123">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/wiredGlass"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/georgianBar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb46"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="en">Georgian bar in singl fram/IGU?</rdfs:label>
+    <rdfs:label xml:lang="de">Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten</rdfs:label>
+    <rdfs:label xml:lang="sv">Spröjs i enkelglas/integrerad i isolerglas?</rdfs:label>
+    <rdfs:label xml:lang="fr">barres géorgiennes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb51">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb97">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/1point8"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb98"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb54">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb55"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -251,22 +507,55 @@
     <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
     <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b43">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b44"/>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b69">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb124">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/connected"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb24">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b3">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb11">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/wood">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
+    <rdfs:label xml:lang="de">Holz</rdfs:label>
+    <rdfs:label xml:lang="en">Wood</rdfs:label>
+    <rdfs:label xml:lang="fr">bois</rdfs:label>
+    <rdfs:label xml:lang="sv">trä</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/laminatedGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb53"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">Verbundsicherheitsglas</rdfs:label>
+    <rdfs:label xml:lang="sv">lamellglas</rdfs:label>
+    <rdfs:label xml:lang="en">laminated glass</rdfs:label>
+    <rdfs:label xml:lang="fr">verre feuilleté</rdfs:label>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/reuseParameterValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb112">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/door"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b22"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb22"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     <rdfs:label xml:lang="en">body tinted glass</rdfs:label>
     <rdfs:label xml:lang="de">gefärbtes Glas</rdfs:label>
@@ -274,56 +563,102 @@
     <rdfs:label xml:lang="fr">verre teinté dans la masse</rdfs:label>
     <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/GlassColour</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b52">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb59">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b62">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowFrame">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b116">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/patternedGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb60"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">ornamentglas</rdfs:label>
+    <rdfs:label xml:lang="sv">ornamentglas</rdfs:label>
+    <rdfs:label xml:lang="en">patterned glass</rdfs:label>
+    <rdfs:label xml:lang="fr">verre à motif</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb108">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/georgianBar"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/windowDismounting"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingDirection"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Above63Perc">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb102">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/connected1+1">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
-    <rdfs:label>&gt;63%</rdfs:label>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
+    <rdfs:comment xml:lang="en">A window consisting of two connected single-glass windows.</rdfs:comment>
+    <rdfs:label xml:lang="en">connected 1+1</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/poor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
-    <rdfs:comment xml:lang="en">Poor quality, cannot be reused, structure should be replaced.</rdfs:comment>
-    <rdfs:label xml:lang="de">Kasten</rdfs:label>
-    <rdfs:label xml:lang="sv">kass</rdfs:label>
-    <rdfs:label xml:lang="fr">mauvais</rdfs:label>
-    <rdfs:label xml:lang="en">poor condition</rdfs:label>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb32"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b75">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb105">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasLightTransmission"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb56">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb57"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb95">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/0point7"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb96"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb39">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/dismountingParameter">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb131">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb102"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb132"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasComponent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingParameter"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+    <rdfs:label xml:lang="sv">har del</rdfs:label>
+    <rdfs:label xml:lang="en">has component</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b71">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b72"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/solarControlGlass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb67"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:label xml:lang="de">Sonnenschutzglas</rdfs:label>
+    <rdfs:label xml:lang="fr">contrôle solaire</rdfs:label>
+    <rdfs:label xml:lang="en">solar control glass</rdfs:label>
+    <rdfs:label xml:lang="sv">solskyddsglas</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b51">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b52"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb53">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb54"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/1point8">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb134">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb105"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb135"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb70">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb71"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/PVC">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
-    <rdfs:label xml:lang="se">1,8</rdfs:label>
-    <rdfs:label xml:lang="en">1.8</rdfs:label>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
+    <rdfs:label>PVC</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/singleGlassOnly">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -334,148 +669,226 @@
     <rdfs:label xml:lang="de">nur Einfachverglasung</rdfs:label>
     <rdfs:label xml:lang="en">single glass only</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasComponent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:label xml:lang="sv">har del</rdfs:label>
-    <rdfs:label xml:lang="en">has component</rdfs:label>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb85">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/poor"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/manufacturingMonthYear">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b56"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb56"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthYear"/>
     <rdfs:label xml:lang="fr">date de production (année/mois)</rdfs:label>
     <rdfs:label xml:lang="en">manufacturing month year (mmYY)</rdfs:label>
     <rdfs:label xml:lang="de">produziert Jahr/Monat</rdfs:label>
     <rdfs:label xml:lang="sv">tillverkningsmånad/år (mmÅÅ)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b34">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb73">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b35"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb74"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/windowDoor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/structuralValue"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">Fenstertür</rdfs:label>
-    <rdfs:label xml:lang="sv">fönsterdörr</rdfs:label>
-    <rdfs:label xml:lang="fr">porte-fenêtre</rdfs:label>
-    <rdfs:label xml:lang="en">window door</rdfs:label>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Above63Perc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
+    <rdfs:label>&gt;63%</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb64">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb65"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb83">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/fair"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb84"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/BuiltElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltElement</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb49">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb50"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb139">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb110"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb140"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb14">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/1point1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
+    <rdfs:label xml:lang="se">1,1</rdfs:label>
+    <rdfs:label xml:lang="en">1.1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/filmOnGlass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b31"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="en">film on glass</rdfs:label>
-    <rdfs:label xml:lang="fr">film sur le verre</rdfs:label>
-    <rdfs:label xml:lang="sv">filmat glas (insyn/solskyddsfilm)</rdfs:label>
-    <rdfs:label xml:lang="de">foliertes Glas (Transparenz/Sonnenschutzfolie)</rdfs:label>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsCoated</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b78">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/totalGlassThickness">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b76"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdfs:label xml:lang="de">gesamte Glasdicke</rdfs:label>
-    <rdfs:label xml:lang="en">total glass thickness</rdfs:label>
-    <rdfs:label xml:lang="sv">total glastjocklek</rdfs:label>
-    <rdfs:label xml:lang="fr">épaisseur totale de verre</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/connected1+1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
-    <rdfs:comment xml:lang="en">A window consisting of two connected single-glass windows.</rdfs:comment>
-    <rdfs:label xml:lang="en">connected 1+1</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b85">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/poor"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b152">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b123"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b153"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b21">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b65">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b66"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasWindowComposition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b16"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
-    <rdfs:label xml:lang="de">Fenstertyp</rdfs:label>
-    <rdfs:label xml:lang="sv">fönstertyp</rdfs:label>
-    <rdfs:label xml:lang="fr">type de fenêtre</rdfs:label>
-    <rdfs:label xml:lang="en">window type</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/ALU">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
-    <rdfs:label xml:lang="en">Aluminium</rdfs:label>
-    <rdfs:label>ALU</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b49"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="en">integrated blind</rdfs:label>
-    <rdfs:label xml:lang="sv">integrerad persienn</rdfs:label>
-    <rdfs:label xml:lang="de">integrierte Jalousie</rdfs:label>
-    <rdfs:label xml:lang="fr">stores intégrés</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b128">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb120">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/totalGlassThickness"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b123">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/wiredGlass"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/solarControlGlass"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/wiredGlass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b79"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">Drahtglas</rdfs:label>
-    <rdfs:label xml:lang="sv">trådglas</rdfs:label>
-    <rdfs:label xml:lang="fr">verre armé</rdfs:label>
-    <rdfs:label xml:lang="en">wired glass</rdfs:label>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired</rdfs:seeAlso>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb26"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b43"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="sv">brandglas utan gel</rdfs:label>
-    <rdfs:label xml:lang="en">fire glass without gel</rdfs:label>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb32">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb33"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb65">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb66"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fromInside">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingDirection"/>
+    <rdfs:comment xml:lang="en">Mounted from the inside, needs to be dismounted from the inside.</rdfs:comment>
+    <rdfs:label xml:lang="fr">de l'intérieur</rdfs:label>
+    <rdfs:label xml:lang="en">from inside</rdfs:label>
+    <rdfs:label xml:lang="sv">inifrån</rdfs:label>
+    <rdfs:label xml:lang="de">von innen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasLightTransmission">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb7"/>
+    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
+    <rdfs:label xml:lang="en">LT above 63%</rdfs:label>
+    <rdfs:label xml:lang="de">Lichttransmission über/unter 63 Prozent</rdfs:label>
+    <rdfs:label xml:lang="fr">Transmission lumineuse &gt; 63 %</rdfs:label>
+    <rdfs:label xml:lang="sv">ljustransmission över /under 63%</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb57">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb58"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/U-value">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb94"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/steel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
+    <rdfs:label xml:lang="de">Stahl</rdfs:label>
+    <rdfs:label xml:lang="en">Steel</rdfs:label>
+    <rdfs:label xml:lang="fr">acier</rdfs:label>
+    <rdfs:label xml:lang="sv">stål</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb125">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/manufacturingMonthYear"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthYear"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/poor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
+    <rdfs:comment xml:lang="en">Poor quality, cannot be reused, structure should be replaced.</rdfs:comment>
+    <rdfs:label xml:lang="de">Kasten</rdfs:label>
+    <rdfs:label xml:lang="sv">kass</rdfs:label>
+    <rdfs:label xml:lang="fr">mauvais</rdfs:label>
+    <rdfs:label xml:lang="en">poor condition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb150">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb121"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb151"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb72">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb76">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb77"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb110">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/containsAsbestos"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb154">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb125"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb155"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/1point8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
+    <rdfs:label xml:lang="se">1,8</rdfs:label>
+    <rdfs:label xml:lang="en">1.8</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/good">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
+    <rdfs:comment xml:lang="en">Good quality of the structure, can be reused directly.</rdfs:comment>
+    <rdfs:comment xml:lang="fr">bon</rdfs:comment>
+    <rdfs:comment xml:lang="sv">bra</rdfs:comment>
+    <rdfs:comment xml:lang="de">gut</rdfs:comment>
+    <rdfs:label>good</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level37">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
+    <rdfs:label>37</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb75">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb141">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb112"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb142"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/2point7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
+    <rdfs:label xml:lang="se">2,7</rdfs:label>
+    <rdfs:label xml:lang="en">2.7</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb40">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb66">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb87">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Above63Perc"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb88"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb157">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb128"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb145">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb116"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb146"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb84">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/good"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb85"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb17">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb142">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb113"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb143"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb12">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb44">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb45"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/windowDismounting">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -487,35 +900,23 @@
     <rdfs:label xml:lang="fr">démonté de l'extérieur/de l'intérieur</rdfs:label>
     <rdfs:label xml:lang="en">mounted from inside/outside</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b157">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b128"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb62">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Condition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b82"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b5">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b120">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb122">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/solarControlGlass"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/windowDoor"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasUValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b13"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
-    <rdfs:label xml:lang="de">U-Wert 2,7/1,8/1,1/0,7</rdfs:label>
-    <rdfs:label xml:lang="fr">Uw 2,7/1,8/1,1/0,7</rdfs:label>
-    <rdfs:label xml:lang="en">u-value 2,7/1,8/1,1/0,7</rdfs:label>
-    <rdfs:label xml:lang="sv">u-värde 2,7/1,8/1,1/0,7</rdfs:label>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance</rdfs:seeAlso>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb38">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb39"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb2">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/0point7">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
@@ -523,798 +924,397 @@
     <rdfs:label xml:lang="sv">0,7</rdfs:label>
     <rdfs:label xml:lang="en">0.7</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/connected">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/structuralValue"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:comment xml:lang="en">A window composed of two connected glass panes.</rdfs:comment>
-    <rdfs:comment xml:lang="se">Ett fönster some består att två kopplade rutor.</rdfs:comment>
-    <rdfs:label xml:lang="de">Kastenfenster ja / nein</rdfs:label>
-    <rdfs:label xml:lang="en">connected</rdfs:label>
-    <rdfs:label xml:lang="fr">double fenêtre</rdfs:label>
-    <rdfs:label xml:lang="se">kopplat</rdfs:label>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb90">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level30"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb91"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b102">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial"/>
-    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b2">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b4"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
-    <rdfs:label xml:lang="de">Flügelmaterial</rdfs:label>
-    <rdfs:label xml:lang="en">has frame material</rdfs:label>
-    <rdfs:label xml:lang="sv">material i båge</rdfs:label>
-    <rdfs:label xml:lang="fr">matériel de cadre</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b89">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:oneOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b90"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b145">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b116"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b146"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b127">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/stampOnGlass"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b60">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b61"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b92">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb92">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level37"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b93"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb93"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/good">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
-    <rdfs:comment xml:lang="en">Good quality of the structure, can be reused directly.</rdfs:comment>
-    <rdfs:comment xml:lang="fr">bon</rdfs:comment>
-    <rdfs:comment xml:lang="sv">bra</rdfs:comment>
-    <rdfs:comment xml:lang="de">gut</rdfs:comment>
-    <rdfs:label>good</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/containsAsbestos">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b25"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="fr">Amiante O/N</rdfs:label>
-    <rdfs:label xml:lang="de">Asbestkitt ja/nein/nicht bekannt</rdfs:label>
-    <rdfs:label xml:lang="sv">Asbestkitt ja/nej/vet ej</rdfs:label>
-    <rdfs:label xml:lang="en">Asbestos Y/N</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b150">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b121"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b151"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b50">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b51"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b126">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/size"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b110">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/containsAsbestos"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b37">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/DismountingParameter">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b38"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b39">
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gMonthYear">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb45">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/patternedGlass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b60"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">ornamentglas</rdfs:label>
-    <rdfs:label xml:lang="sv">ornamentglas</rdfs:label>
-    <rdfs:label xml:lang="en">patterned glass</rdfs:label>
-    <rdfs:label xml:lang="fr">verre à motif</rdfs:label>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb151">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb122"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb152"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b44">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b45"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/2point7">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
-    <rdfs:label xml:lang="se">2,7</rdfs:label>
-    <rdfs:label xml:lang="en">2.7</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b111">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/containsPCB"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/size">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b63"/>
-    <rdfs:label xml:lang="de">Größe</rdfs:label>
-    <rdfs:label xml:lang="en">size</rdfs:label>
-    <rdfs:label xml:lang="sv">storlek</rdfs:label>
-    <rdfs:label xml:lang="fr">taille</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b95">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/0point7"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b96"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/enamelledGlass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b28"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">emailliertes Glas</rdfs:label>
-    <rdfs:label xml:lang="sv">emaljerat glas</rdfs:label>
-    <rdfs:label xml:lang="en">enamelled glass</rdfs:label>
-    <rdfs:label xml:lang="fr">verre émaillé</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b26">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b27"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/U-value">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb13">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b94"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb14"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b36">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb42">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level35">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
+    <rdfs:label>35</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb18">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb132">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb103"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb133"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb89">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:oneOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb90"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb11"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/DismountingDirection">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingParameter"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/temperedGlass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b73"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="de">gehärtetes Glas</rdfs:label>
-    <rdfs:label xml:lang="sv">härdat glas</rdfs:label>
-    <rdfs:label xml:lang="en">tempered glass</rdfs:label>
-    <rdfs:label xml:lang="fr">verre trempé</rdfs:label>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsTempered</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b87">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Above63Perc"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b88"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/connected2+1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
-    <rdfs:comment xml:lang="en">A window composed of a single glass window connected with an IGU window.</rdfs:comment>
-    <rdfs:label xml:lang="en">connected 2+1</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b73">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b74"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuildingElementType"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fireGlassWGel">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b40"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="sv">brandglas med gel</rdfs:label>
-    <rdfs:label xml:lang="en">fire glass with gel</rdfs:label>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb149">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb120"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb150"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb148">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb119"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb149"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/DismountingParameter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb20">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb21"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b103">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb117">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb140">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb111"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb141"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb8">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb52">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb103">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasWindowComposition"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b125">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/manufacturingMonthYear"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthYear"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb78">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b76">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb60">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b77"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb61"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b47">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb55">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb86"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb5">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b48"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb6"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasSoundReduction">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b10"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
-    <rdfs:label xml:lang="fr">Atténuation acoustique 40/37/35/30</rdfs:label>
-    <rdfs:label xml:lang="de">Schalldämmung 40/37/35/30</rdfs:label>
-    <rdfs:label xml:lang="en">Sound reduction 40/37/35/30</rdfs:label>
-    <rdfs:label xml:lang="sv">ljudreduktion 40/37/35/30</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#gMonthYear">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b58">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b59"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b63">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b64"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b18">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb68">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb69"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuildingElementType"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b45">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b31">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b32"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/fromInside">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingDirection"/>
-    <rdfs:comment xml:lang="en">Mounted from the inside, needs to be dismounted from the inside.</rdfs:comment>
-    <rdfs:label xml:lang="fr">de l'intérieur</rdfs:label>
-    <rdfs:label xml:lang="en">from inside</rdfs:label>
-    <rdfs:label xml:lang="sv">inifrån</rdfs:label>
-    <rdfs:label xml:lang="de">von innen</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b108">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/windowDismounting"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/DismountingDirection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/openable">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/totalGlassThickness">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/structuralValue"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
+    <rdfs:domain rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb76"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="de">gesamte Glasdicke</rdfs:label>
+    <rdfs:label xml:lang="en">total glass thickness</rdfs:label>
+    <rdfs:label xml:lang="sv">total glastjocklek</rdfs:label>
+    <rdfs:label xml:lang="fr">épaisseur totale de verre</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b133">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b104"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b134"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b33">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb88">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Below63Perc"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b46">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b47"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/wood">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
-    <rdfs:label xml:lang="de">Holz</rdfs:label>
-    <rdfs:label xml:lang="en">Wood</rdfs:label>
-    <rdfs:label xml:lang="fr">bois</rdfs:label>
-    <rdfs:label xml:lang="sv">trä</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b96">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/1point1"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b97"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b22">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b23"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b30">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb6">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b115">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb128">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/fireGlass"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/totalGlassThickness"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb9">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb36">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb114">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/filmOnGlass"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b154">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b125"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b155"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b83">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/fair"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b84"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/1point1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
-    <rdfs:label xml:lang="se">1,1</rdfs:label>
-    <rdfs:label xml:lang="en">1.1</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b54">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb41">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b55"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb42"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/stampOnGlass">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb100">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasComponent"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/ALU">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
+    <rdfs:label xml:lang="en">Aluminium</rdfs:label>
+    <rdfs:label>ALU</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb33">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Material">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb121">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/temperedGlass"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb118">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/laminatedGlass"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb98">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/2point7"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb91">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level35"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb92"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Window">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
+    <rdfs:subClassOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb99"/>
+    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb109">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb94">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:oneOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb95"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb82">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:oneOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb83"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb47">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb48"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb81">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb143">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb114"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb144"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb16">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb17"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb146">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb117"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb147"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb61">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb62"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb137">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb108"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb138"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb23"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb80">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb81"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb37">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb38"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb147">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb118"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb148"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb50">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb99">
+    <owl:intersectionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb129"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb3">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb34">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb35"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb130">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb101"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb131"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb77">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb78"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb127">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/stampOnGlass"/>
+    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb15">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb156">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb127"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb157"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb27">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b70"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="en">stamp on glass</rdfs:label>
-    <rdfs:label xml:lang="sv">stämplat glas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb69">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb46">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb47"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb93">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level40"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb96">
+    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/1point1"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb97"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb86">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:oneOf rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb87"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb155">
+    <rdf:first rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb126"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb156"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level40">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
     <rdfs:label>40</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuildingElementType"/>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Attributes/ElementType</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/PVC">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/Material"/>
-    <rdfs:label>PVC</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b124">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/connected"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasLightTransmission">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasStructure"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b7"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
-    <rdfs:label xml:lang="en">LT above 63%</rdfs:label>
-    <rdfs:label xml:lang="de">Lichttransmission über/unter 63 Prozent</rdfs:label>
-    <rdfs:label xml:lang="fr">Transmission lumineuse &gt; 63 %</rdfs:label>
-    <rdfs:label xml:lang="sv">ljustransmission över /under 63%</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b14">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b15"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b16">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b17"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b149">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b120"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b150"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b48">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b148">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b119"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b149"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b97">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/1point8"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b98"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level37">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
-    <rdfs:label>37</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b156">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b127"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b157"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b99">
-    <owl:intersectionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b129"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowFrame">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b20">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b21"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b121">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/temperedGlass"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/hasStructure">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/reuseParameter"/>
-    <rdfs:domain rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:range rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Material">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b132">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b103"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b133"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b72">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b12">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b74">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b75"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b135">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b106"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b136"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b66">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b13">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b14"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowGlass">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/IGUonly">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"/>
-    <rdfs:comment xml:lang="en">An insulating glass unit (IGU) window only.</rdfs:comment>
-    <rdfs:label xml:lang="en">IGU only</rdfs:label>
-    <rdfs:label xml:lang="de">Nur Isolierglas</rdfs:label>
-    <rdfs:label xml:lang="fr">Vitrage Isolant seulement</rdfs:label>
-    <rdfs:label xml:lang="sv">endast isolerglas</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b80">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b81"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b147">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b118"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b148"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b98">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/2point7"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b142">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b113"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b143"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b144">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b115"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b145"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b113">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/enamelledGlass"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b122">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/windowDoor"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b91">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level35"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b92"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b153">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b124"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b154"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b67">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b68"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b143">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b114"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b144"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b107">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasUValue"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/U-value"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b81">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b101">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasComponent"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b151">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b122"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b152"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b9">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/georgianBar">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"/>
-    <rdfs:domain rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b46"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    <rdfs:label xml:lang="en">Georgian bar in singl fram/IGU?</rdfs:label>
-    <rdfs:label xml:lang="de">Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten</rdfs:label>
-    <rdfs:label xml:lang="sv">Spröjs i enkelglas/integrerad i isolerglas?</rdfs:label>
-    <rdfs:label xml:lang="fr">barres géorgiennes</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b140">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b111"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b141"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b77">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b78"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b155">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b126"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b156"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b104">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasFrameCondition"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/Condition"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b93">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level40"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b59">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowGlassType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuildingElementType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Below63Perc">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
-    <rdfs:label>&lt;63%</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/reuseParameterValue">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/structuralValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b32">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb29">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b33"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb30"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b79">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b80"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b105">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasLightTransmission"/>
-    <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b100">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasComponent"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b88">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Below63Perc"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b27">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowFrame"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b25">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b26"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b35">
+  <rdf:Description rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb71">
     <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b36"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b42">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b17">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b18"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/Window">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/BuiltElement"/>
-    <rdfs:subClassOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b99"/>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b139">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b110"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b140"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b117">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b90">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/level30"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b91"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b55">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b68">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b69"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b146">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b117"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b147"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b138">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b109"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b139"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b20"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b94">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:oneOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b95"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/level30">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"/>
-    <rdfs:label>30</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b24">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/WindowGlass"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b84">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/good"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b85"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/WindowCompositionType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/CEON/ontology/flatglass/StructuralParameter"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b40">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b41"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/recyclingParameter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b131">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b102"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b132"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b82">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:oneOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b83"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b41">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b42"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/StructuralParameter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b141">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b112"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b142"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b70">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b71"/>
+    <rdf:rest rdf:nodeID="nf5e38af8fea8452693808b719e66a5fdb72"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/BuildingElementType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b61">
-    <rdf:first rdf:resource="http://w3id.org/CEON/ontology/flatglass/Window"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b62"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/reuseParameter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b137">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b108"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b138"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/BuiltElement">
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/StructuralParameter">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:seeAlso>https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltElement</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b49">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b50"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b130">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b101"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b131"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b136">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b107"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b137"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b129">
-    <rdf:first rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b100"/>
-    <rdf:rest rdf:nodeID="ne7ed6dbc12614084aab4342df6a13fb8b130"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/recycleParameterValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="http://w3id.org/CEON/ontology/flatglass/recyclingParameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>
