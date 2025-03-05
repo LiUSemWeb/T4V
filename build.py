@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from pybars import Compiler
 from bs4 import BeautifulSoup, formatter
 from glob import glob
 import os
@@ -6,8 +7,14 @@ import re
 import urllib.request
 import zipfile
 from pylode.profiles.vocpub import VocPub
-import pdfkit
 from rdflib import Graph
+import logging
+from playwright.sync_api import sync_playwright
+
+# Configure root logger
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+logging.basicConfig(format='%(levelname)-8s [%(filename)s:%(lineno)d] %(message)s', level=logging.DEBUG)
 
 
 def copy_ontologies():
@@ -61,68 +68,6 @@ def download_owl2vowl():
             zip_ref.extractall("temp/")
 
 
-def build_pdf():
-    """Convert docs to PDF using wkhtmltopdf."""
-    try:
-        html_formatter = formatter.HTMLFormatter(indent=4)
-        
-        for source in sorted(glob("ontology/*/*/*", recursive=True)):
-            if not source.endswith(".ttl"):
-                continue
-
-            print(f"Generating PDF docs for {source}")
-
-            parts = re.match("ontology/([^/]*)/([^/]*)", source)    
-            name = parts.group(1)
-            version = float(parts.group(2))
-        
-
-            html_file = f"docs/ontology/{name}/{version}/index.html"
-            pdf_file = f"docs/ontology/{name}/{version}/{name}.pdf"
-            
-            # Drop TOC, logo and iframe before generating PDF 
-            with open(html_file, encoding="utf-8") as f:
-                soup = BeautifulSoup(f, "html.parser")
-                style = soup.new_tag('style', type='text/css')
-                style.append("""
-                    /* hack to avoid lonely heading (mot of the time at least) */
-                    h2 {
-                        page-break-inside: avoid;
-                    }
-                    .section h2::after {
-                        content: "";
-                        display: block;
-                        height: 300px;
-                        margin-bottom: -300px;
-                    }
-                    .entity {
-                        page-break-inside: avoid;
-                    }
-                    p, dt, dd, ul {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                    }
-                """)
-                soup.head.append(style)
-                
-                for table in soup.select("table"):
-                    table.insert(0, soup.new_tag("thead"))
-                    table.wrap(soup.new_tag("tbody")).wrap(soup.new_tag("table"))
-                    table.unwrap()
-                    
-                for id in ["toc", "pylode", "overview"]:
-                    tag = soup.find(id=id)
-                    if tag != None:
-                        tag.decompose()
-                
-            pdfkit.from_string(soup.prettify(formatter=html_formatter), pdf_file, options = { "enable-local-file-access": "" })
-    except Exception as e:
-        print(e)
-        print("PDF conversion cancelled. Is 'wkhtmltopdf' (https://wkhtmltopdf.org/) installed?")
-
-
 def generate_vowl():
     """Generate VOWL specifications."""
     for source in sorted(glob("ontology/*/*/*", recursive=True)):
@@ -167,17 +112,41 @@ def create_documentation():
         # relative path to webvowl and vowl file
         path_to_webvowl = f"../../../webvowl/index.html#ontology/{name}/{version}/{name}"
 
-        # # Insert overview section into documentation with WebVOWL in an iframe
+        # Insert overview section into documentation with WebVOWL in an iframe
         with open(html_file, encoding="utf-8") as f:
             soup = BeautifulSoup(f, "html.parser")
-            overview = BeautifulSoup(f"""
+            overview = BeautifulSoup(
+                f"""
                 <div id="overview" class="section">
+                    <style>
+                        #iframe-overview {{
+                            width: 100%;
+                            height: 600px;
+                        }}
+                        .caption {{
+                            display: flex;
+                            justify-content: space-between;
+                        }}
+                        .caption a {{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 2em;
+                        }}
+                    </style>
                     <h2>Overview</h2>
                     <div class="figure">
-                        <iframe id="iframe-overview" width="100%" height ="600px" src="{path_to_webvowl}"></iframe>
-                        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
+                        <iframe id="iframe-overview" src="{path_to_webvowl}">
+                        </iframe>
+                        <div class="caption">
+                            <div>
+                                <strong>Figure 1:</strong> Ontology overview.
+                            </div>
+                            <div>
+                                <a title="Show fullscreen" href="{path_to_webvowl}">&#x26F6;</a>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                </div>
             """, "html.parser")
             tag = soup.find(id='metadata')
             tag.insert_after(overview)
@@ -187,12 +156,96 @@ def create_documentation():
                 f.write(soup.prettify(formatter=html_formatter))
 
 
+def html_to_pdf_with_playwright(html_file, pdf_file):
+    """Convert HTML file to a PDF file using Playwright."""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+
+            # Load the HTML file
+            page.goto(f"file://{os.path.abspath(html_file)}")
+
+            # Generate PDF
+            page.pdf(path=pdf_file, format="A4", margin={"top": "10mm", "bottom": "10mm", "left": "10mm", "right": "10mm"}, scale=0.7)
+            browser.close()
+    except Exception as e:
+        logger.error(f"Failed to generate PDF for {html_file}: {e}")
+
+
+def build_pdf_playwright():
+    """Convert docs to PDF using Playwright."""
+    try:
+        html_formatter = formatter.HTMLFormatter(indent=4)
+        map = {
+            "modules": "ontology",
+            "demo": "demo"
+        }
+
+        for type in ["modules", "demo"]:
+            for source in sorted(glob(f"ontology/{type}/*/*/*", recursive=True)):
+                if not source.endswith(".ttl"):
+                    continue
+
+                logger.info(f"Generating PDF docs for {source}")
+
+                parts = re.match(f"ontology/{type}/([^/]*)/([^/]*)", source)    
+                name = parts.group(1)
+                version = parts.group(2)
+            
+                target = f"docs/{map[type]}/{name}/{version}/"
+                html_file = f"{target}/index.html"
+                pdf_file = f"{target}/{name}.pdf"
+                
+                # Drop TOC, logo, and iframe before generating PDF 
+                with open(html_file, encoding="utf-8") as f:
+                    soup = BeautifulSoup(f, "html.parser")
+                    style = soup.new_tag('style', type='text/css')
+                    style.append("""
+                        /* hack to avoid lonely heading (most of the time at least) */
+                        h2 {
+                            page-break-inside: avoid;
+                        }
+                        .section h2::after {
+                            content: "";
+                            display: block;
+                            height: 300px;
+                            margin-bottom: -300px;
+                        }
+                        .entity {
+                            page-break-inside: avoid;
+                        }
+                        p, dt, dd, ul {
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                        }
+                    """)
+                    soup.head.append(style)
+                    
+                    for id in ["toc", "pylode", "overview"]:
+                        tag = soup.find(id=id)
+                        if tag is not None:
+                            tag.decompose()
+                
+                # Write modified HTML back to temp file
+                temp_file = "temp/html_to_pdf.html"
+                with open(temp_file, "w", encoding="utf-8") as f:
+                   f.write(soup.prettify(formatter=html_formatter))
+                
+                # Generate PDF using Playwright
+                html_to_pdf_with_playwright(temp_file, pdf_file)
+    except Exception as e:
+        logger.error(e)
+        logger.error("PDF conversion cancelled. Ensure Playwright is installed and configured properly.")
+
                                         
 def main():
     download_owl2vowl()
     generate_vowl()
     create_documentation()
-    build_pdf()
+    build_pdf_playwright()
     copy_ontologies()
     copy_website()
 
