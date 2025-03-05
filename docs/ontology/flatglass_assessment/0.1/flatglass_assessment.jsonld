@@ -1,6 +1,6 @@
 [
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/NonRecyclableWindow",
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -11,30 +11,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab60"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b1"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab60",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab61"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab61",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -42,205 +24,25 @@
       {
         "@list": [
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab62"
+            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowEnamelledGlass"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab63"
+            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWBodyTintedGlass"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab64"
+            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWThickFilm"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab65"
+            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWithLaminatedGlass"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab62",
+    "@id": "http://www.w3.org/2001/XMLSchema#gMonthYear",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab63",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab64",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab65",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowEnamelledGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab6"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab6",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab7"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab14"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab8"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab9"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab10"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab8",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab14",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass"
-      }
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
     ]
   },
   {
@@ -255,12 +57,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab133"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b133"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab133",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b133",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -271,14 +73,14 @@
             "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab134"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b134"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab134",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b134",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -294,9 +96,781 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/license",
+    "@id": "http://purl.org/dc/terms/creator",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWithLaminatedGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b42"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b42",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b43"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b56"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b43",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b44"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b45"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b46"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b47"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b48"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b44",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b45",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b46",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b47",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b48",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b49",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b56",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/laminatedGlass"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b72"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b72",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b73",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b74"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b83"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b84"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b85"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b86"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b87"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b74",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b75"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b80"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b75",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b76"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b77"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b76",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b77",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b80",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b83",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b84",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b85",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b86",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/laminatedGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b87",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWBodyTintedGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b18"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b18",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b19"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b19",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b20"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b21"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b20",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b21",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b22",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b26",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWGeorgianBar",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b120"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b120",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b121"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b126"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b121",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b122"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b123"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b122",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b123",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/containsPCB"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b126",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/georgianBar"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWThickFilm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b30"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b30",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b31"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b32"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b33"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b32",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b33",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b38",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25"
+      }
     ]
   },
   {
@@ -373,29 +947,273 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/description",
+    "@id": "http://purl.org/dc/terms/license",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWTemperedGlass",
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowEnamelledGlass",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/RecyclableWindow"
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
       }
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab137"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b6"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab137",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b7"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b8"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b9"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/NonRecyclableWindow",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b60"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b60",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b61"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b61",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b62"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b63"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b64"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b65"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b62",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b63",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b64",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b65",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": true
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWBlinds",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b100"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b100",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -406,17 +1224,17 @@
             "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab138"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b101"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab143"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b106"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab138",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b101",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -424,17 +1242,17 @@
       {
         "@list": [
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab139"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b102"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab140"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b103"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab139",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b102",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -450,7 +1268,7 @@
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab140",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b103",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -466,7 +1284,7 @@
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab143",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b106",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -477,12 +1295,190 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/temperedGlass"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind"
       }
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/ReusableWindow",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b147"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b147",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b148"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b153"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b158"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b159"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b148",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b149"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b150"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b149",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/level37"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasSoundReduction"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/level40"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasSoundReduction"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b153",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b154"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b155"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b154",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/1point8"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasUValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b155",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/2point7"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasUValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b158",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/good"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasFrameCondition"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b159",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Above63Perc"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasLightTransmission"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
@@ -499,12 +1495,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab130"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b130"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab130",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b130",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -522,279 +1518,23 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWThickFilm",
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWAsbestos",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
+        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWHazardousSubstance"
       }
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab30"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b96"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab30",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab31"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab38"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab31",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab32"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab33"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab34"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab32",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab33",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab34",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab38",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWBodyTintedGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab18"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab18",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab19"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab26"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab19",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab20"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab21"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab22"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab20",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab21",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab22",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab26",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2001/XMLSchema#gMonthYear",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWGeorgianBar",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab120"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab120",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b96",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -805,67 +1545,14 @@
             "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab121"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab126"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b97"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab121",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab122"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab123"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab122",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab123",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/containsPCB"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab126",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b97",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -876,288 +1563,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/georgianBar"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWBlinds",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab100"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab100",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab101"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab106"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab101",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab102"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab103"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab102",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
         "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab103",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/containsPCB"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab106",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/ReusableWindow",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab147"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab147",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab148"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab153"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab158"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab159"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab148",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab149"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab150"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab149",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/level37"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasSoundReduction"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab150",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/level40"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasSoundReduction"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab153",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab154"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab155"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab154",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/1point8"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasUValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab155",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/2point7"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasUValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab158",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/good"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasFrameCondition"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab159",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Above63Perc"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasLightTransmission"
       }
     ]
   },
@@ -1173,12 +1579,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab110"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b110"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab110",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b110",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1189,17 +1595,17 @@
             "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab111"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b111"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab116"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b116"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab111",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b111",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1207,17 +1613,17 @@
       {
         "@list": [
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab112"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b112"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab113"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b113"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab112",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b112",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1233,7 +1639,7 @@
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab113",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b113",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1249,7 +1655,7 @@
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab116",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b116",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1265,482 +1671,23 @@
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow",
+    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWTemperedGlass",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/RecyclableWindow"
       }
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab1"
+        "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b137"
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab1",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowEnamelledGlass"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWBodyTintedGlass"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWThickFilm"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWithLaminatedGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab72"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab72",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab73"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab73",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab74"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab83"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab84"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab85"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab86"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab87"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab74",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab75"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab80"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab75",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab76"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab77"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab76",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab77",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab80",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab83",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab84",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab85",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab86",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/laminatedGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab87",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/contributor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindowWithLaminatedGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/DowncyclableWindow"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab42"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab42",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab43"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab56"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab43",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab44"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab45"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab46"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab47"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab48"
-          },
-          {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab49"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab44",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab45",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab46",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab47",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab48",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab49",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": false
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab56",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#hasValue": [
-      {
-        "@value": true
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/laminatedGlass"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWAsbestos",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindowWHazardousSubstance"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab96"
-      }
-    ]
-  },
-  {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab96",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b137",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1751,14 +1698,67 @@
             "@id": "http://w3id.org/CEON/ontology/flatglass_assessment/RecyclableWindow"
           },
           {
-            "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab97"
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b138"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b143"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n1a6250a00e3c4fe586f860c1bc69c88ab97",
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b138",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b139"
+          },
+          {
+            "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b140"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b139",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b140",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#hasValue": [
+      {
+        "@value": false
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/containsPCB"
+      }
+    ]
+  },
+  {
+    "@id": "_:ne4c82a58e17f4e95aa2623cae4e81284b143",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1769,7 +1769,7 @@
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/temperedGlass"
       }
     ]
   }
