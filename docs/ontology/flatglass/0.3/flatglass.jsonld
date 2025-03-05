@@ -1,41 +1,47 @@
 [
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingDirection",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/1point8",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/U-value"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingParameter"
+        "@language": "se",
+        "@value": "1,8"
+      },
+      {
+        "@language": "en",
+        "@value": "1.8"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/windowDoor",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/georgianBar",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b46"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
+        "@language": "en",
+        "@value": "Georgian bar in singl fram/IGU?"
+      },
+      {
         "@language": "de",
-        "@value": "Fenstertür"
+        "@value": "Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten"
       },
       {
         "@language": "sv",
-        "@value": "fönsterdörr"
+        "@value": "Spröjs i enkelglas/integrerad i isolerglas?"
       },
       {
         "@language": "fr",
-        "@value": "porte-fenêtre"
-      },
-      {
-        "@language": "en",
-        "@value": "window door"
+        "@value": "barres géorgiennes"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -45,8 +51,44 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
       }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b46",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -79,7 +121,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb19"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b19"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -89,7 +131,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb19",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -107,28 +149,13 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasType",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Attributes/ElementType"
-      }
+      "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/Condition",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -139,12 +166,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb86"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b82"
       }
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb86",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b82",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -152,12 +179,46 @@
       {
         "@list": [
           {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Above63Perc"
+            "@id": "http://w3id.org/CEON/ontology/flatglass/fair"
           },
           {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Below63Perc"
+            "@id": "http://w3id.org/CEON/ontology/flatglass/good"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/poor"
           }
         ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/fromOutside",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/DismountingDirection"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Mounted from the outside, needs to be dismounted from the outside."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "de l'extérieur"
+      },
+      {
+        "@language": "en",
+        "@value": "from outside"
+      },
+      {
+        "@language": "sv",
+        "@value": "utifrån"
+      },
+      {
+        "@language": "de",
+        "@value": "von außen"
       }
     ]
   },
@@ -173,118 +234,58 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/dismountingParameter",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasSoundReduction",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingParameter"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/0point7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/U-value"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "sv",
-        "@value": "0,7"
-      },
-      {
-        "@language": "en",
-        "@value": "0.7"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/containsPCB",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b10"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "fr",
-        "@value": "PCB O/N"
-      },
-      {
-        "@language": "en",
-        "@value": "PCB Y/N"
+        "@value": "Atténuation acoustique 40/37/35/30"
       },
       {
         "@language": "de",
-        "@value": "PCB ja/nein"
+        "@value": "Schalldämmung 40/37/35/30"
+      },
+      {
+        "@language": "en",
+        "@value": "Sound reduction 40/37/35/30"
       },
       {
         "@language": "sv",
-        "@value": "PCB ja/nej"
+        "@value": "ljudreduktion 40/37/35/30"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb34"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Folie dicker als 0,25 mm"
-      },
-      {
-        "@language": "en",
-        "@value": "film thicker than 0.25mm"
-      },
-      {
-        "@language": "sv",
-        "@value": "film tjockare än 0,25mm"
-      },
-      {
-        "@language": "fr",
-        "@value": "épaisseur du film > 0,25 mm"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/filmOnGlass"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb34",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -302,25 +303,13 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/level37",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "37"
-      }
-    ]
-  },
-  {
     "@id": "http://w3id.org/CEON/ontology/flatglass/solarControlGlass",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb67"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b67"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -353,7 +342,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb67",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b67",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -371,46 +360,51 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/manufacturingMonthYear",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasFrameCondition",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb56"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b1"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "fr",
-        "@value": "date de production (année/mois)"
-      },
-      {
-        "@language": "en",
-        "@value": "manufacturing month year (mmYY)"
+        "@value": "Etat du cadre"
       },
       {
         "@language": "de",
-        "@value": "produziert Jahr/Monat"
+        "@value": "Zustand des Flügels"
+      },
+      {
+        "@language": "en",
+        "@value": "has frame condition"
       },
       {
         "@language": "sv",
-        "@value": "tillverkningsmånad/år (mmÅÅ)"
+        "@value": "skick på fönsterbåge"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#gMonthYear"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Condition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameter"
       }
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb56",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -422,212 +416,39 @@
           },
           {
             "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
           }
         ]
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/patternedGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb60"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "ornamentglas"
-      },
-      {
-        "@language": "sv",
-        "@value": "ornamentglas"
-      },
-      {
-        "@language": "en",
-        "@value": "patterned glass"
-      },
-      {
-        "@language": "fr",
-        "@value": "verre à motif"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb60",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/license",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/fromInside",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/poor",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/DismountingDirection"
+      "http://w3id.org/CEON/ontology/flatglass/Condition"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Mounted from the inside, needs to be dismounted from the inside."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "fr",
-        "@value": "de l'intérieur"
-      },
-      {
-        "@language": "en",
-        "@value": "from inside"
-      },
-      {
-        "@language": "sv",
-        "@value": "inifrån"
-      },
-      {
-        "@language": "de",
-        "@value": "von innen"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/2point7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/U-value"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "se",
-        "@value": "2,7"
-      },
-      {
-        "@language": "en",
-        "@value": "2.7"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Material"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recyclingParameter"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb28"
+        "@value": "Poor quality, cannot be reused, structure should be replaced."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "de",
-        "@value": "emailliertes Glas"
+        "@value": "Kasten"
       },
       {
         "@language": "sv",
-        "@value": "emaljerat glas"
-      },
-      {
-        "@language": "en",
-        "@value": "enamelled glass"
+        "@value": "kass"
       },
       {
         "@language": "fr",
-        "@value": "verre émaillé"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+        "@value": "mauvais"
+      },
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb28",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
+        "@language": "en",
+        "@value": "poor condition"
       }
     ]
   },
@@ -638,7 +459,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb73"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b73"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -676,7 +497,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb73",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b73",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -694,79 +515,23 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasComponent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b40"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "sv",
-        "@value": "har del"
+        "@value": "brandglas med gel"
       },
       {
         "@language": "en",
-        "@value": "has component"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/connected",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A window composed of two connected glass panes."
-      },
-      {
-        "@language": "se",
-        "@value": "Ett fönster some består att två kopplade rutor."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Kastenfenster ja / nein"
-      },
-      {
-        "@language": "en",
-        "@value": "connected"
-      },
-      {
-        "@language": "fr",
-        "@value": "double fenêtre"
-      },
-      {
-        "@language": "se",
-        "@value": "kopplat"
+        "@value": "fire glass with gel"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -776,26 +541,25 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/connected2+1",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b40",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2002/07/owl#unionOf": [
       {
-        "@language": "en",
-        "@value": "A window composed of a single glass window connected with an IGU window."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "connected 2+1"
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
       }
     ]
   },
@@ -831,94 +595,41 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/singleGlassOnly",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/size",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A single glass window structure."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "fr",
-        "@value": "Simple vitrage seulement"
-      },
-      {
-        "@language": "sv",
-        "@value": "endast enkelglas"
-      },
-      {
-        "@language": "de",
-        "@value": "nur Einfachverglasung"
-      },
-      {
-        "@language": "en",
-        "@value": "single glass only"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/PVC",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/Material"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "PVC"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasUValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb13"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b63"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "de",
-        "@value": "U-Wert 2,7/1,8/1,1/0,7"
-      },
-      {
-        "@language": "fr",
-        "@value": "Uw 2,7/1,8/1,1/0,7"
+        "@value": "Größe"
       },
       {
         "@language": "en",
-        "@value": "u-value 2,7/1,8/1,1/0,7"
+        "@value": "size"
       },
       {
         "@language": "sv",
-        "@value": "u-värde 2,7/1,8/1,1/0,7"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+        "@value": "storlek"
+      },
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/U-value"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance"
+        "@language": "fr",
+        "@value": "taille"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
       }
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb13",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b63",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -927,6 +638,9 @@
         "@list": [
           {
             "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
           },
           {
             "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
@@ -942,52 +656,43 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/level37",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameter"
+        "@value": "37"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/laminatedGlass",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb53"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b22"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
+        "@language": "en",
+        "@value": "body tinted glass"
+      },
+      {
         "@language": "de",
-        "@value": "Verbundsicherheitsglas"
+        "@value": "gefärbtes Glas"
       },
       {
         "@language": "sv",
-        "@value": "lamellglas"
-      },
-      {
-        "@language": "en",
-        "@value": "laminated glass"
+        "@value": "genomfärgat glas"
       },
       {
         "@language": "fr",
-        "@value": "verre feuilleté"
+        "@value": "verre teinté dans la masse"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
@@ -997,7 +702,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated"
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/GlassColour"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
@@ -1007,7 +712,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb53",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b22",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1025,188 +730,21 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/steel",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/Below63Perc",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/Material"
+      "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "de",
-        "@value": "Stahl"
-      },
-      {
-        "@language": "en",
-        "@value": "Steel"
-      },
-      {
-        "@language": "fr",
-        "@value": "acier"
-      },
-      {
-        "@language": "sv",
-        "@value": "stål"
+        "@value": "<63%"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/Material",
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/level40",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "40"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/WindowType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/Condition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb82"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb82",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/fair"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/good"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/poor"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/IGUonly",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "An insulating glass unit (IGU) window only."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "IGU only"
-      },
-      {
-        "@language": "de",
-        "@value": "Nur Isolierglas"
-      },
-      {
-        "@language": "fr",
-        "@value": "Vitrage Isolant seulement"
-      },
-      {
-        "@language": "sv",
-        "@value": "endast isolerglas"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasLightTransmission",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb7"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "LT above 63%"
-      },
-      {
-        "@language": "de",
-        "@value": "Lichttransmission über/unter 63 Prozent"
-      },
-      {
-        "@language": "fr",
-        "@value": "Transmission lumineuse > 63 %"
-      },
-      {
-        "@language": "sv",
-        "@value": "ljustransmission över /under 63%"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb7",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -1216,7 +754,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb76"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b76"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1249,7 +787,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb76",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b76",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1267,337 +805,33 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameter",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltElement"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasWindowComposition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb16"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Fenstertyp"
-      },
-      {
-        "@language": "sv",
-        "@value": "fönstertyp"
-      },
-      {
-        "@language": "fr",
-        "@value": "type de fenêtre"
-      },
-      {
-        "@language": "en",
-        "@value": "window type"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb16",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/wood",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/singleGlassOnly",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/Material"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Holz"
-      },
-      {
-        "@language": "en",
-        "@value": "Wood"
-      },
-      {
-        "@language": "fr",
-        "@value": "bois"
-      },
-      {
-        "@language": "sv",
-        "@value": "trä"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/1point1",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/U-value"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "se",
-        "@value": "1,1"
-      },
-      {
-        "@language": "en",
-        "@value": "1.1"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/2001/XMLSchema#gMonthYear",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/1point8",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/U-value"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "se",
-        "@value": "1,8"
-      },
-      {
-        "@language": "en",
-        "@value": "1.8"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb79"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Drahtglas"
-      },
-      {
-        "@language": "sv",
-        "@value": "trådglas"
-      },
-      {
-        "@language": "fr",
-        "@value": "verre armé"
-      },
-      {
-        "@language": "en",
-        "@value": "wired glass"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb79",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlassType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/georgianBar",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb46"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Georgian bar in singl fram/IGU?"
-      },
-      {
-        "@language": "de",
-        "@value": "Sprossen in Einzelglas/eingebaut in Isolierglaseinheiten"
-      },
-      {
-        "@language": "sv",
-        "@value": "Spröjs i enkelglas/integrerad i isolerglas?"
-      },
-      {
-        "@language": "fr",
-        "@value": "barres géorgiennes"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb46",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/level35",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "35"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/Below63Perc",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "<63%"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/good",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/Condition"
+      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Good quality of the structure, can be reused directly."
-      },
-      {
-        "@language": "fr",
-        "@value": "bon"
-      },
-      {
-        "@language": "sv",
-        "@value": "bra"
-      },
-      {
-        "@language": "de",
-        "@value": "gut"
+        "@value": "A single glass window structure."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "good"
+        "@language": "fr",
+        "@value": "Simple vitrage seulement"
+      },
+      {
+        "@language": "sv",
+        "@value": "endast enkelglas"
+      },
+      {
+        "@language": "de",
+        "@value": "nur Einfachverglasung"
+      },
+      {
+        "@language": "en",
+        "@value": "single glass only"
       }
     ]
   },
@@ -1637,129 +871,6 @@
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
         "@id": "http://w3id.org/CEON/ontology/flatglass/dismountingParameter"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb37"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Brandschutzglas"
-      },
-      {
-        "@language": "sv",
-        "@value": "brandglas"
-      },
-      {
-        "@language": "en",
-        "@value": "fire glass"
-      },
-      {
-        "@language": "fr",
-        "@value": "verre anti-feu"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb37",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb49"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "integrated blind"
-      },
-      {
-        "@language": "sv",
-        "@value": "integrerad persienn"
-      },
-      {
-        "@language": "de",
-        "@value": "integrierte Jalousie"
-      },
-      {
-        "@language": "fr",
-        "@value": "stores intégrés"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb49",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
       }
     ]
   },
@@ -1826,241 +937,7 @@
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb89"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb89",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/level30"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/level35"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/level37"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/level40"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb25"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "fr",
-        "@value": "Amiante O/N"
-      },
-      {
-        "@language": "de",
-        "@value": "Asbestkitt ja/nein/nicht bekannt"
-      },
-      {
-        "@language": "sv",
-        "@value": "Asbestkitt ja/nej/vet ej"
-      },
-      {
-        "@language": "en",
-        "@value": "Asbestos Y/N"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb25",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/contributor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/filmOnGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb31"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "film on glass"
-      },
-      {
-        "@language": "fr",
-        "@value": "film sur le verre"
-      },
-      {
-        "@language": "sv",
-        "@value": "filmat glas (insyn/solskyddsfilm)"
-      },
-      {
-        "@language": "de",
-        "@value": "foliertes Glas (Transparenz/Sonnenschutzfolie)"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsCoated"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb31",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/recyclingParameter",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasSoundReduction",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb10"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "fr",
-        "@value": "Atténuation acoustique 40/37/35/30"
-      },
-      {
-        "@language": "de",
-        "@value": "Schalldämmung 40/37/35/30"
-      },
-      {
-        "@language": "en",
-        "@value": "Sound reduction 40/37/35/30"
-      },
-      {
-        "@language": "sv",
-        "@value": "ljudreduktion 40/37/35/30"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/poor",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/good",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
       "http://w3id.org/CEON/ontology/flatglass/Condition"
@@ -2068,44 +945,141 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "Poor quality, cannot be reused, structure should be replaced."
+        "@value": "Good quality of the structure, can be reused directly."
+      },
+      {
+        "@language": "fr",
+        "@value": "bon"
+      },
+      {
+        "@language": "sv",
+        "@value": "bra"
+      },
+      {
+        "@language": "de",
+        "@value": "gut"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "good"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Attributes/ElementType"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/windowDoor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "de",
-        "@value": "Kasten"
+        "@value": "Fenstertür"
       },
       {
         "@language": "sv",
-        "@value": "kass"
+        "@value": "fönsterdörr"
       },
       {
         "@language": "fr",
-        "@value": "mauvais"
+        "@value": "porte-fenêtre"
       },
       {
         "@language": "en",
-        "@value": "poor condition"
+        "@value": "window door"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/connected1+1",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/patternedGlass",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@language": "en",
-        "@value": "A window consisting of two connected single-glass windows."
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b60"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
+        "@language": "de",
+        "@value": "ornamentglas"
+      },
+      {
+        "@language": "sv",
+        "@value": "ornamentglas"
+      },
+      {
         "@language": "en",
-        "@value": "connected 1+1"
+        "@value": "patterned glass"
+      },
+      {
+        "@language": "fr",
+        "@value": "verre à motif"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b60",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
       }
     ]
   },
@@ -2121,444 +1095,19 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/openable",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/bodyTintedGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb22"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "body tinted glass"
-      },
-      {
-        "@language": "de",
-        "@value": "gefärbtes Glas"
-      },
-      {
-        "@language": "sv",
-        "@value": "genomfärgat glas"
-      },
-      {
-        "@language": "fr",
-        "@value": "verre teinté dans la masse"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/GlassColour"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb22",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb43"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "sv",
-        "@value": "brandglas utan gel"
-      },
-      {
-        "@language": "en",
-        "@value": "fire glass without gel"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb43",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/fromOutside",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/0point7",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/DismountingDirection"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "Mounted from the outside, needs to be dismounted from the outside."
-      }
+      "http://w3id.org/CEON/ontology/flatglass/U-value"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "fr",
-        "@value": "de l'extérieur"
-      },
-      {
-        "@language": "en",
-        "@value": "from outside"
-      },
       {
         "@language": "sv",
-        "@value": "utifrån"
-      },
-      {
-        "@language": "de",
-        "@value": "von außen"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/size",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb63"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Größe"
+        "@value": "0,7"
       },
       {
         "@language": "en",
-        "@value": "size"
-      },
-      {
-        "@language": "sv",
-        "@value": "storlek"
-      },
-      {
-        "@language": "fr",
-        "@value": "taille"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb63",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/ALU",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/Material"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "Aluminium"
-      },
-      {
-        "@value": "ALU"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/U-value",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb94"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb94",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#oneOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/0point7"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/1point1"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/1point8"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/2point7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb4"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "de",
-        "@value": "Flügelmaterial"
-      },
-      {
-        "@language": "en",
-        "@value": "has frame material"
-      },
-      {
-        "@language": "sv",
-        "@value": "material i båge"
-      },
-      {
-        "@language": "fr",
-        "@value": "matériel de cadre"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Material"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/hasFrameCondition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb1"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "fr",
-        "@value": "Etat du cadre"
-      },
-      {
-        "@language": "de",
-        "@value": "Zustand des Flügels"
-      },
-      {
-        "@language": "en",
-        "@value": "has frame condition"
-      },
-      {
-        "@language": "sv",
-        "@value": "skick på fönsterbåge"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/Condition"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_Condition/AssessmentCondition"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameter"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb1",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/stampOnGlass",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb70"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "stamp on glass"
-      },
-      {
-        "@language": "sv",
-        "@value": "stämplat glas"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
-      }
-    ]
-  },
-  {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb70",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
-          },
-          {
-            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
-          }
-        ]
+        "@value": "0.7"
       }
     ]
   },
@@ -2602,14 +1151,666 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/level30",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recyclingParameter"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b86"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b86",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Above63Perc"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Below63Perc"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuiltElement"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/Material",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/fromInside",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
+      "http://w3id.org/CEON/ontology/flatglass/DismountingDirection"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Mounted from the inside, needs to be dismounted from the inside."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "30"
+        "@language": "fr",
+        "@value": "de l'intérieur"
+      },
+      {
+        "@language": "en",
+        "@value": "from inside"
+      },
+      {
+        "@language": "sv",
+        "@value": "inifrån"
+      },
+      {
+        "@language": "de",
+        "@value": "von innen"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/2point7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/U-value"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "se",
+        "@value": "2,7"
+      },
+      {
+        "@language": "en",
+        "@value": "2.7"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingDirection",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingParameter"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/containsPCB",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "PCB O/N"
+      },
+      {
+        "@language": "en",
+        "@value": "PCB Y/N"
+      },
+      {
+        "@language": "de",
+        "@value": "PCB ja/nein"
+      },
+      {
+        "@language": "sv",
+        "@value": "PCB ja/nej"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/Above63Perc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": ">63%"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/connected1+1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A window consisting of two connected single-glass windows."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "connected 1+1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameter"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/enamelledGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b28"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "emailliertes Glas"
+      },
+      {
+        "@language": "sv",
+        "@value": "emaljerat glas"
+      },
+      {
+        "@language": "en",
+        "@value": "enamelled glass"
+      },
+      {
+        "@language": "fr",
+        "@value": "verre émaillé"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b28",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasFrameMaterial",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b4"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Flügelmaterial"
+      },
+      {
+        "@language": "en",
+        "@value": "has frame material"
+      },
+      {
+        "@language": "sv",
+        "@value": "material i båge"
+      },
+      {
+        "@language": "fr",
+        "@value": "matériel de cadre"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasMaterialComposition"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/IGUonly",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An insulating glass unit (IGU) window only."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "IGU only"
+      },
+      {
+        "@language": "de",
+        "@value": "Nur Isolierglas"
+      },
+      {
+        "@language": "fr",
+        "@value": "Vitrage Isolant seulement"
+      },
+      {
+        "@language": "sv",
+        "@value": "endast isolerglas"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/laminatedGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b53"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Verbundsicherheitsglas"
+      },
+      {
+        "@language": "sv",
+        "@value": "lamellglas"
+      },
+      {
+        "@language": "en",
+        "@value": "laminated glass"
+      },
+      {
+        "@language": "fr",
+        "@value": "verre feuilleté"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsLaminated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b53",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/1point1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/U-value"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "se",
+        "@value": "1,1"
+      },
+      {
+        "@language": "en",
+        "@value": "1.1"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#gMonthYear",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/stampOnGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b70"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "stamp on glass"
+      },
+      {
+        "@language": "sv",
+        "@value": "stämplat glas"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b70",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/steel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/Material"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Stahl"
+      },
+      {
+        "@language": "en",
+        "@value": "Steel"
+      },
+      {
+        "@language": "fr",
+        "@value": "acier"
+      },
+      {
+        "@language": "sv",
+        "@value": "stål"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/filmOnGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b31"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "film on glass"
+      },
+      {
+        "@language": "fr",
+        "@value": "film sur le verre"
+      },
+      {
+        "@language": "sv",
+        "@value": "filmat glas (insyn/solskyddsfilm)"
+      },
+      {
+        "@language": "de",
+        "@value": "foliertes Glas (Transparenz/Sonnenschutzfolie)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsCoated"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/ALU",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/Material"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Aluminium"
+      },
+      {
+        "@value": "ALU"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/WindowType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/connected",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A window composed of two connected glass panes."
+      },
+      {
+        "@language": "se",
+        "@value": "Ett fönster some består att två kopplade rutor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Kastenfenster ja / nein"
+      },
+      {
+        "@language": "en",
+        "@value": "connected"
+      },
+      {
+        "@language": "fr",
+        "@value": "double fenêtre"
+      },
+      {
+        "@language": "se",
+        "@value": "kopplat"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue"
       }
     ]
   },
@@ -2628,12 +1829,12 @@
         "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
       },
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb99"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b99"
       }
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb99",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b99",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -2641,98 +1842,98 @@
       {
         "@list": [
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb100"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b100"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb101"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b101"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb102"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b102"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb103"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b103"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb104"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b104"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb105"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b105"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb106"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b106"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb107"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b107"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb108"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b108"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb109"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b109"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb110"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b110"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb111"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b111"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb112"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b112"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb113"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b113"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb114"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b114"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb115"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b115"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb116"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b116"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb117"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b117"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb118"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b118"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb119"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b119"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb120"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b120"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb121"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b121"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb122"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b122"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb123"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b123"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb124"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b124"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb125"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b125"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb126"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b126"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb127"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b127"
           },
           {
-            "@id": "_:n609618439d5048359670d6280a51bc5fb128"
+            "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b128"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb100",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b100",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2748,7 +1949,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb101",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b101",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2764,7 +1965,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb102",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b102",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2786,7 +1987,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb103",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b103",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2808,7 +2009,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb104",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b104",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2830,7 +2031,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb105",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b105",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2852,7 +2053,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb106",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b106",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2874,7 +2075,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb107",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b107",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2896,7 +2097,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb108",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b108",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2918,7 +2119,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb109",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b109",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2940,7 +2141,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb110",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b110",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2962,7 +2163,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb111",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b111",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -2984,7 +2185,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb112",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b112",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3006,7 +2207,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb113",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b113",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3028,7 +2229,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb114",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b114",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3050,7 +2251,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb115",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b115",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3072,7 +2273,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb116",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b116",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3094,7 +2295,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb117",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b117",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3116,7 +2317,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb118",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b118",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3138,7 +2339,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb119",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b119",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3160,7 +2361,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb120",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b120",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3182,7 +2383,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb121",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b121",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3204,7 +2405,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb122",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b122",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3226,7 +2427,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb123",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b123",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3248,7 +2449,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb124",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b124",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3270,7 +2471,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb125",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b125",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3292,7 +2493,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb126",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b126",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3314,7 +2515,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb127",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b127",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3336,7 +2537,7 @@
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb128",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b128",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -3358,68 +2559,97 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/Above63Perc",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/U-value",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@value": ">63%"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b94"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b94",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/0point7"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/1point1"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/1point8"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/2point7"
+          }
+        ]
+      }
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingParameter",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/created",
+    "@id": "http://purl.org/dc/terms/creator",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWGel",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasUValue",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:n609618439d5048359670d6280a51bc5fb40"
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b13"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@language": "sv",
-        "@value": "brandglas med gel"
+        "@language": "de",
+        "@value": "U-Wert 2,7/1,8/1,1/0,7"
+      },
+      {
+        "@language": "fr",
+        "@value": "Uw 2,7/1,8/1,1/0,7"
       },
       {
         "@language": "en",
-        "@value": "fire glass with gel"
+        "@value": "u-value 2,7/1,8/1,1/0,7"
+      },
+      {
+        "@language": "sv",
+        "@value": "u-värde 2,7/1,8/1,1/0,7"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/U-value"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindowWINDOW/prop/Pset_WindowCommon/ThermalTransmittance"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
       }
     ]
   },
   {
-    "@id": "_:n609618439d5048359670d6280a51bc5fb40",
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b13",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -3437,9 +2667,779 @@
     ]
   },
   {
-    "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue",
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasComponent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "sv",
+        "@value": "har del"
+      },
+      {
+        "@language": "en",
+        "@value": "has component"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/openable",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/structuralValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/level35",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "35"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/containsAsbestos",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b25"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "Amiante O/N"
+      },
+      {
+        "@language": "de",
+        "@value": "Asbestkitt ja/nein/nicht bekannt"
+      },
+      {
+        "@language": "sv",
+        "@value": "Asbestkitt ja/nej/vet ej"
+      },
+      {
+        "@language": "en",
+        "@value": "Asbestos Y/N"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b25",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingParameter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/manufacturingMonthYear",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b56"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "fr",
+        "@value": "date de production (année/mois)"
+      },
+      {
+        "@language": "en",
+        "@value": "manufacturing month year (mmYY)"
+      },
+      {
+        "@language": "de",
+        "@value": "produziert Jahr/Monat"
+      },
+      {
+        "@language": "sv",
+        "@value": "tillverkningsmånad/år (mmÅÅ)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#gMonthYear"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b56",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/level40",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "40"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b37"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Brandschutzglas"
+      },
+      {
+        "@language": "sv",
+        "@value": "brandglas"
+      },
+      {
+        "@language": "en",
+        "@value": "fire glass"
+      },
+      {
+        "@language": "fr",
+        "@value": "verre anti-feu"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/fireGlassWoGel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b43"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "sv",
+        "@value": "brandglas utan gel"
+      },
+      {
+        "@language": "en",
+        "@value": "fire glass without gel"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b43",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/dismountingParameter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/DismountingParameter"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/PVC",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/Material"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PVC"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/wiredGlass",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b79"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Drahtglas"
+      },
+      {
+        "@language": "sv",
+        "@value": "trådglas"
+      },
+      {
+        "@language": "fr",
+        "@value": "verre armé"
+      },
+      {
+        "@language": "en",
+        "@value": "wired glass"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcWindow/prop/Pset_DoorWindowGlazingType/IsWired"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/recycleParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b79",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasLightTransmission",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b7"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "LT above 63%"
+      },
+      {
+        "@language": "de",
+        "@value": "Lichttransmission über/unter 63 Prozent"
+      },
+      {
+        "@language": "fr",
+        "@value": "Transmission lumineuse > 63 %"
+      },
+      {
+        "@language": "sv",
+        "@value": "ljustransmission över /under 63%"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/LigthTransmissionLevel"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasWindowComposition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b16"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Fenstertyp"
+      },
+      {
+        "@language": "sv",
+        "@value": "fönstertyp"
+      },
+      {
+        "@language": "fr",
+        "@value": "type de fenêtre"
+      },
+      {
+        "@language": "en",
+        "@value": "window type"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/hasStructure"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/wood",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/Material"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Holz"
+      },
+      {
+        "@language": "en",
+        "@value": "Wood"
+      },
+      {
+        "@language": "fr",
+        "@value": "bois"
+      },
+      {
+        "@language": "sv",
+        "@value": "trä"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/StructuralParameter"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b89"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b89",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#oneOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/level30"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/level35"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/level37"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/level40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/hasIntegratedBlind",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b49"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "integrated blind"
+      },
+      {
+        "@language": "sv",
+        "@value": "integrerad persienn"
+      },
+      {
+        "@language": "de",
+        "@value": "integrierte Jalousie"
+      },
+      {
+        "@language": "fr",
+        "@value": "stores intégrés"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameterValue"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b49",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/WindowFrame",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuiltElement"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/recyclingParameter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/reuseParameter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/filmThickerThan0point25",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b34"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "de",
+        "@value": "Folie dicker als 0,25 mm"
+      },
+      {
+        "@language": "en",
+        "@value": "film thicker than 0.25mm"
+      },
+      {
+        "@language": "sv",
+        "@value": "film tjockare än 0,25mm"
+      },
+      {
+        "@language": "fr",
+        "@value": "épaisseur du film > 0,25 mm"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#boolean"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/filmOnGlass"
+      }
+    ]
+  },
+  {
+    "@id": "_:n28e9f4a1f05d4745a19d88a2c1f805b6b34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/Window"
+          },
+          {
+            "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/connected2+1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/WindowCompositionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A window composed of a single glass window connected with an IGU window."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "connected 2+1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/WindowGlassType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/CEON/ontology/flatglass/BuildingElementType"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/CEON/ontology/flatglass/level30",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://w3id.org/CEON/ontology/flatglass/SoundReductionLevel"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "30"
+      }
     ]
   }
 ]
